@@ -30,7 +30,7 @@ export const Footer = () => {
         <Line />
         <ContentContainer>
           <GoTop data-cursor onClick={scrollTop}>
-            REVENIR EN HAUT
+            GO TO TOP
           </GoTop>
           <LinksContainer>
             <Links data-cursor href='mailto:antoinegervais.motion@outlook.fr'>
@@ -55,12 +55,12 @@ export const Footer = () => {
         </ContentContainer>
       </FooterContainer>
       <Credits>
-        {'MADE WITH ❤️ BY'}
+        {'MADE WITH ❤️ & 🔥 BY'}
         <a
           style={{ color: colors.primary, marginLeft: '0.5em' }}
           href='https://github.com/Sakoutecher'
         >
-          HCAMPOS
+          DAYONG WU
         </a>
       </Credits>
     </>
