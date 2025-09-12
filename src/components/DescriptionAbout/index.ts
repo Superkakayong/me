@@ -1,0 +1,1 @@
+export { DescriptionAbout } from './DescriptionAbout'

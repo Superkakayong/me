@@ -1,0 +1,122 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'OTR';
+  src: url('/fonts/OTRtype-Regular.woff') format('woff');
+}
+
+/* RESET */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.arrowDown {
+  animation: arrow-scroll 2s ease infinite;
+}
+
+.arrowRight {
+  animation: arrow-right 1.5s ease infinite;
+}
+
+.arrowLeft {
+  animation: arrow-left 1.5s ease infinite;
+}
+
+@keyframes arrow-scroll {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
+.cls-1 {
+  fill: #ddd;
+}
+.cls-2 {
+  fill: #fff;
+}
+.cls-3 {
+  font-size: 38.13px;
+}
+.cls-3,
+.cls-4 {
+  fill: #fffdfd;
+  font-family: OTRtype-Regular, 'OTR type';
+  font-variation-settings: 'wght' 100;
+}
+.cls-5 {
+  fill: #212121;
+}
+.cls-4 {
+  font-size: 35.41px;
+}
+
+.stickers {
+  fill: #dddddd;
+  font-family: 'OTR';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 15s linear 0s infinite normal none running rotate;
+}
+
+.stickers-photo {
+  fill: #dddddd;
+  font-family: 'OTR';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 15s linear 0s infinite normal none running rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes arrow-right {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(7px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes arrow-left {
+  0% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}

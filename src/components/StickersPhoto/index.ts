@@ -1,0 +1,1 @@
+export { StickersPhoto } from './StickersPhoto'
