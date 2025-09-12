@@ -51,10 +51,20 @@ export const Text = styled.h1`
   @media ${mediaSize.phone} {
     font-size: ${bigLetters.xxs};
   }
-
   @media ${mediaSize.under} {
     font-size: ${bigLetters.xxxs};
   }
+`
+
+// Dayong: Name: extend Text but allow different color/font/transform for the personal name
+export const Name = styled(Text)`
+  /* example overrides: change color and remove uppercase */
+  color: ${colors.name};
+  text-transform: none;
+  /* if you want a different font, set it here:
+     font-family: 'YourFontName', ${fonts.WorkSans};
+  */
+  letter-spacing: 4px;
 `
 
 export const ArrowContainer = styled.div`

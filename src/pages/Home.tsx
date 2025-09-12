@@ -10,6 +10,7 @@ import {
   DrawingArrow,
   HardSkillsContainer,
   HardSkillsTitle,
+  Name,
 } from '../styles/pages/Home.style'
 
 //Variables
@@ -35,9 +36,9 @@ export const Home = () => {
           <Stickers />
           <DrawingArrow src={drawingArrow} />
           <TextContainer>
+            <Name>Dayong Wu</Name>
             <TypeText />
-            <Text>DESIGNER</Text>
-            <Text>+ART DIRECTOR</Text>
+            {/* <Text>Dayong Wu</Text> */}
           </TextContainer>
           <ArrowContainer>
             <FaArrowDown

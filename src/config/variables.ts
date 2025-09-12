@@ -11,6 +11,7 @@ export const colors = {
   projectTag: '#7A97DD',
   success: '#5bf698',
   error: '#f84141',
+  name: '#b7891cff',
 }
 
 /**Font Size */
