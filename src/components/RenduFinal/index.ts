@@ -1,0 +1,1 @@
+export { RenduFinal } from './RenduFinal'
