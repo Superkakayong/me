@@ -56,19 +56,19 @@ export const Navbar = () => {
           />
           <PseudoElement active={location.pathname === '/' ? true : false}>
             <Link to='/'>
-              <NavbarLinks data-cursor>ACCUEIL</NavbarLinks>
+              <NavbarLinks data-cursor>HOME</NavbarLinks>
             </Link>
           </PseudoElement>
           <PseudoElement active={location.pathname === '/about' ? true : false}>
             <Link to='/about'>
-              <NavbarLinks data-cursor>A PROPOS</NavbarLinks>
+              <NavbarLinks data-cursor>ABOUT</NavbarLinks>
             </Link>
           </PseudoElement>
           <PseudoElement
             active={location.pathname === '/projects' ? true : false}
           >
             <Link to='projects'>
-              <NavbarLinks data-cursor>PROJETS</NavbarLinks>
+              <NavbarLinks data-cursor>PROJECTS</NavbarLinks>
             </Link>
           </PseudoElement>
         </LinksContainer>
