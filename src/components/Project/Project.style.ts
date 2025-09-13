@@ -14,6 +14,11 @@ export const Container = styled.div`
   &:hover img {
     transform: scale(1.1);
   }
+
+  /* Dayong: also scale video on hover the same way as images */
+  &:hover video {
+    transform: scale(1.1);
+  }
 `
 
 export const ImgContainer = styled.div`
@@ -24,6 +29,14 @@ export const ImgContainer = styled.div`
 `
 
 export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 500ms ease;
+`
+
+/* Dayong: styled video element to support mp4/webm previews in project cards */
+export const Video = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -68,7 +81,7 @@ export const TagContainer = styled.div`
 `
 
 export const ProjectTitle = styled.div`
-  font-family: ${fonts.OTR};
+  font-family: ${fonts.WorkSans};
   font-size: ${fontSize.md};
   color: ${colors.primary};
   letter-spacing: 2px;

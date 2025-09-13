@@ -1,7 +1,10 @@
 /**Fonts */
+// Dayong: added Playfair Display and Abril Fatface
 export const fonts = {
   OTR: "'OTR', sans-serif",
   WorkSans: "'Work Sans', sans-serif",
+  Playfair: "'Playfair Display', serif", 
+  Abril: "'Abril Fatface', serif",
 }
 
 /**Colors */

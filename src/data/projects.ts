@@ -4,8 +4,8 @@ import { ProjectType } from '../config/types'
 export const projects: Array<ProjectType> = [
   {
     id: 0,
-    title: `RETROFIT AR`,
-    imgPath: '/assets/projects/rolland-garros/rolland-garros-vignette.png',
+    title: `RetrofitAR - Future of Construction`,
+    imgPath: '/assets/projects/RetrofitAR/test vid.mov',
     mainsTag: ['MIXED REALITY'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
