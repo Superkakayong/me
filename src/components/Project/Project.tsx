@@ -13,6 +13,7 @@ import {
   BottomContainer,
   TagContainer,
   Img,
+  Video,
 } from './Project.style'
 
 //Components
@@ -36,7 +37,12 @@ export const Project: FC<ProjectProps> = ({ title, imgPath, mainsTag, id }) => {
     >
       <Container>
         <ImgContainer>
-          <Img loading='lazy' src={imgPath} />
+          {/* Dayong: render video preview when imgPath points to .mp4 or .webm, otherwise render image */}
+          {/(\.mp4|\.webm)$/i.test(imgPath) ? (
+            <Video src={imgPath} autoPlay loop muted playsInline />
+          ) : (
+            <Img loading='lazy' src={imgPath} />
+          )}
         </ImgContainer>
         <InfoContainer>
           <ProjectTitleContainer>

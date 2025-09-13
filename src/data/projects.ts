@@ -4,30 +4,35 @@ import { ProjectType } from '../config/types'
 export const projects: Array<ProjectType> = [
   {
     id: 0,
-    title: `RETROFIT AR`,
-    imgPath: '/assets/projects/rolland-garros/rolland-garros-vignette.png',
+    title: `RetrofitAR - Future of Construction`,
+    imgPath: '/assets/projects/RetrofitAR/testvid.MOV',
     mainsTag: ['MIXED REALITY'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
-    imgAccueil: '/assets/projects/rolland-garros/rolland-garros-accueil.png',
+    imgAccueil: '/assets/projects/RetrofitAR/yong.jpg',
     client: [
-      `CLIENTS :`,
-      `PROJET SCOLAIRE`,
-      `YNOV PARIS CAMPUS`,
-      `PERRIER X ROLLAND GARROS`,
+      `An Industrial Level`,
+      `Mixed Reality Application`,
+      `For the Construction Industry`
     ],
     role: [
-      `ROLE :`,
-      `DIRECTION ARTISTIQUE`,
-      `MIXED REALITY`,
-      `ILLUSTRATION`,
-      `SCENARISTE`,
+      `Skillset:`,
+      `Product Design`,
+      `Project Management`,
+      `Human Computer Interaction (HCI)`,
+      `Product Development: Unity3D, Mixed Reality Toolkit (MRTK), Spatial Computing, C#`
     ],
-    credits: [`CREDITS :`],
+    credits: [
+      `Roles:`,
+      `Lead Developer`,
+      `Co-lead UX/UI Designer`,
+      `Team:`,
+      `Fraunhofer CMI Energy Team (7+ people)`
+    ],
     description: [
       {
-        title: `PRE-PRODUCTION`,
-        desc: `Perrier et Roland Garros sont partenaires depuis maintenant 41 ans, à l’occasion de la prochaine édition de Roland Garros, ces deux derniers souhaitent mettre en avant leur longue durée de collaboration à travers une vidéo en MIXED REALITY. Cette animation doit caractériser des éléments graphiques comme une balle, une bouteille ou bien encore une raquette pour leur donner des intentions, voire des émotions. C’est suite à ces informations que j’ai établies des idées de scénarios appuyés sur la communication de Perrier, qui m’ont permis de trouver en lien entre la longue collaboration et les différentes étapes que traverse un couple. J’ai alors produit un scénario appuyé d’un storyboard pour travailler mes plans et permettre au client de se projeter dans l’animation avec les recherches graphiques effectuées.`,
+        title: `What is RetrofitAR?`,
+        desc: `Approximately 160 to 170 million people in the U.S. live in houses, with the average U.S. household having about 2.5 people. More specifically, around 70% of Americans live in single-family homes, which includes both detached houses and some townhouses.`,
         side: 'left',
       },
       {

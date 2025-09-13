@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import { fontSize, fonts, colors, mediaSize } from '../../config/variables'
 
 export const Title = styled.h4`
-  font-family: ${fonts.OTR};
+  font-family: ${fonts.WorkSans};
   color: ${colors.primary};
-  text-transform: uppercase;
-  font-size: ${fontSize.md};
+  text-transform: none;
+  font-size: ${fontSize.lg};
   font-weight: normal;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 
   @media ${mediaSize.phone} {
     white-space: nowrap;
