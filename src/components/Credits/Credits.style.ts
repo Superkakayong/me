@@ -12,9 +12,9 @@ export const CreditsBlock = styled.div`
 `
 
 export const Text = styled.span`
-  font-family: ${fonts.OTR};
+  font-family: ${fonts.WorkSans};
   color: ${colors.primary};
-  font-size: ${fontSize.xs};
+  font-size: ${fontSize.md};
 
   @media ${mediaSize.phone} {
     font-size: 0.1em;
