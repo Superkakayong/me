@@ -81,7 +81,7 @@ export const About = () => {
               m’intéressant au métier de vfx artist que je découvre le motion
               design. Au même moment, je participais au développement
               d’associations esport qui m’ont donné l’oppor-tunité de me lancer
-              dans le motion design et le graphisme.
+              dans le MIXED REALITY et le graphisme.
             </DescriptionAbout>
           </GraphismeContainer>
         </MainGraphismeContainer>
@@ -97,7 +97,7 @@ export const About = () => {
               handleMouseLeave={handleMouseLeaveExperience}
             >
               Mon expérience professionnelle débute dès ma première création. Ma
-              première animation en motion design est un cv vidéo pour un coach
+              première animation en MIXED REALITY est un cv vidéo pour un coach
               et un manager esport. À partir de cette vidéo, j’ai décroché mes
               premiers clients, avec qui j’ai affiné ma technique et adapté mes
               créations à leurs demandes. En parallèle, j’ai rejoins InFuria
@@ -108,12 +108,12 @@ export const About = () => {
               des projets de musiques et de web series. Après 2 ans chez
               InFuria, je suis rentré à Paris Ynov Campus pour développer mon
               sens créatif et mes qualités technique. Au même moment, je rejoins
-              l’assoication BeHard Esport en tant que motion designer et
+              l’assoication BeHard Esport en tant que MIXED REALITYer et
               graphiste. Quelques mois après, je deviens directeur artistique de
               l’association ou je dirige une petite équipe de 4 créatifs. Avec
               BeHard, j’ai eu l’occasion de développé plusieurs identités
               visuelles, plusieurs vidéos de communications (montage vidéo,
-              motion design et production 3D) et une collection textile autour
+              MIXED REALITY et production 3D) et une collection textile autour
               de l’équipe.
             </DescriptionAbout>
           </ExperienceContainer>

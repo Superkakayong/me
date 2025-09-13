@@ -26,7 +26,7 @@ export const Projects = () => {
   const {
     filter,
     setFilterALL,
-    setFilterMO,
+    setFilterMR,
     setFilterGD,
     setFilterUX,
     setFilterVE,
@@ -46,11 +46,11 @@ export const Projects = () => {
   }
 
   useEffect(() => {
-    if (searchParams.get('filter') === 'MO') {
-      setFilterMO()
+    if (searchParams.get('filter') === 'MIXED REALITY') {
+      setFilterMR()
     } else if (searchParams.get('filter') === 'GD') {
       setFilterGD()
-    } else if (searchParams.get('filter') === 'UXUI') {
+    } else if (searchParams.get('filter') === 'x') {
       setFilterUX()
     } else if (searchParams.get('filter') === 'VE') {
       setFilterVE()
@@ -66,19 +66,19 @@ export const Projects = () => {
       <ProjectsContainer>
         <FilterContainer>
           <Button
-            text={`TOUS`}
+            text={`ALL`}
             size={'s'}
             onclick={setFilterALL}
             active={filter === 'ALL' ? true : false}
           />
           <Button
-            text={`MOTION DESIGN`}
+            text={`MIXED REALITY`}
             size={'s'}
-            onclick={setFilterMO}
-            active={filter === 'MOTION DESIGN' ? true : false}
+            onclick={setFilterMR}
+            active={filter === 'MIXED REALITY' ? true : false}
           />
           <Button
-            text={`GRAPHIC DESIGN`}
+            text={`Generative AI`}
             size={'s'}
             onclick={setFilterGD}
             active={filter === 'GRAPHIC DESIGN' ? true : false}

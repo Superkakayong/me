@@ -14,7 +14,7 @@ describe('Tag', () => {
     const props: ProjectProps = {
       title: 'Test project',
       imgPath: 'test.png',
-      mainsTag: ['MOTION DESIGN', 'GRAPHIC DESIGN'],
+      mainsTag: ['MIXED REALITY', 'GRAPHIC DESIGN'],
       secondsTags: ['TYPOGRAPHY'],
       id: 1,
     }
@@ -31,7 +31,7 @@ describe('Tag', () => {
         <Project
           title='Test project'
           imgPath='test.png'
-          mainsTag={['MOTION DESIGN', 'GRAPHIC DESIGN']}
+          mainsTag={['MIXED REALITY', 'GRAPHIC DESIGN']}
           secondsTags={['TYPOGRAPHY']}
           id={1}
         />
@@ -47,7 +47,7 @@ describe('Tag', () => {
         <Project
           title='Test project'
           imgPath='test.png'
-          mainsTag={['MOTION DESIGN', 'GRAPHIC DESIGN']}
+          mainsTag={['MIXED REALITY', 'GRAPHIC DESIGN']}
           secondsTags={['TYPOGRAPHY']}
           id={1}
         />

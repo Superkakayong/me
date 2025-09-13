@@ -8,8 +8,8 @@ export const useFilter = () => {
     setFilter('ALL')
   }
 
-  const setFilterMO = () => {
-    setFilter('MOTION DESIGN')
+  const setFilterMR = () => {
+    setFilter('MIXED REALITY')
   }
 
   const setFilterGD = () => {
@@ -31,7 +31,7 @@ export const useFilter = () => {
   return {
     filter,
     setFilterALL,
-    setFilterMO,
+    setFilterMR,
     setFilterGD,
     setFilterUX,
     setFilterVE,

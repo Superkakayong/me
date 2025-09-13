@@ -11,7 +11,7 @@ describe('Tag', () => {
 
   it('tag props types are all good', () => {
     const props: TagProps = {
-      text: 'MOTION DESIGN',
+      text: 'MIXED REALITY',
       size: 'md',
       style: { color: 'red' },
       main: true,
@@ -23,14 +23,14 @@ describe('Tag', () => {
   })
 
   it('should display a tag with text inside', () => {
-    render(<Tag text='MOTION DESIGN' size='md' main={true} />)
-    const button = screen.getByText('MOTION DESIGN')
+    render(<Tag text='MIXED REALITY' size='md' main={true} />)
+    const button = screen.getByText('MIXED REALITY')
     expect(button).toBeInTheDocument()
   })
 
   it('render the right tag', () => {
-    render(<Tag text='MOTION DESIGN' size='md' main={true} />)
-    const button = screen.getByText('MOTION DESIGN')
+    render(<Tag text='MIXED REALITY' size='md' main={true} />)
+    const button = screen.getByText('MIXED REALITY')
     expect(button.tagName).toBe('A')
   })
 })

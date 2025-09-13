@@ -16,7 +16,7 @@ export const HardSkills = () => {
   const navigate = useNavigate()
 
   const handleClickMotionDesign = () => {
-    navigate('/projects?filter=MO')
+    navigate('/projects?filter=MIXED REALITY')
   }
 
   const handleClickGraphicDesign = () => {
@@ -44,7 +44,7 @@ export const HardSkills = () => {
           alt='Logo compétence'
           onClick={handleClickMotionDesign}
         />
-        <SkillsText>MOTION DESIGN</SkillsText>
+        <SkillsText>MIXED REALITY</SkillsText>
       </Skills>
       <Skills>
         <Img
