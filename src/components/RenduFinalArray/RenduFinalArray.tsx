@@ -31,7 +31,7 @@ export const RenduFinalArray: FC<RenduFinalArrayProps> = ({
 
   return (
     <RenduFinalContainer>
-      {showTitle && <Title>RENDU FINAL</Title>}
+      {showTitle && <Title>DEMO</Title>}
       <ArrayContainer>
         {renduFinalContent?.map((content) => {
           if (content.length === 2) {

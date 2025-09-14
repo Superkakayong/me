@@ -27,12 +27,14 @@ export const projects: Array<ProjectType> = [
       `Lead Developer`,
       `Co-lead UX/UI Designer`,
       `Team:`,
-      `Fraunhofer CMI Energy Team (7+ people)`
+      `Fraunhofer CMI Energy Team (10+ people)`,
+      `Funder:`,
+      `Department of Energy (DOE)`
     ],
     description: [
       {
-        title: `What is RetrofitAR?`,
-        desc: `Approximately 160 to 170 million people in the U.S. live in houses, with the average U.S. household having about 2.5 people. More specifically, around 70% of Americans live in single-family homes, which includes both detached houses and some townhouses.`,
+        title: `RetrofitAR: What and Why?`,
+        desc: `The U.S. has roughly 160–170 million people living in houses, with 70% residing in single-family homes—the primary target for exterior retrofits. Yet today, deep wall retrofits remain costly, error-prone, and heavily labor-intensive, slowing the nation’s progress toward energy-efficient housing.\n\nTo address this, we developed RetrofitAR, an Augmented Reality application for Microsoft HoloLens 2 that redefines how workers with limited training install prefabricated insulation panel blocks (PBs) and trim. Instead of relying on traditional paper instructions, semi-skilled workers receive real-time, visual guidance that shows exactly which PB to select from the pallet and precisely where to place it on the façade—turning a complex process into an intuitive, step-by-step workflow.\n\nBacked by over $6 million in funding from the U.S. Department of Energy (DOE), field demonstrations proved RetrofitAR’s transformative impact: two semi-skilled workers installed a full 10’×20’ wall section outdoors in just 14 minutes, compared with 3.5 hours using traditional methods—a 15× increase in speed. Scaled to a full house, this translates to completing deep retrofits in under 3 days by a two-person crew, at costs below $6/ft². RetrofitAR has been piloted in Massachusetts homes and will undergo further testing in cold-climate states including Pennsylvania, New Hampshire, and Vermont.`,
         side: 'left',
       },
       {
@@ -46,15 +48,15 @@ export const projects: Array<ProjectType> = [
         side: 'left',
       },
     ],
-    renduFinal: true,
+    renduFinal: false,
     hrefButtonRenduFinal: '#',
-    videoPathRenduFinal: `/assets/projects/rolland-garros/rolland-garros-video.mp4`,
+    videoPathRenduFinal: `/assets/projects/RetrofitAR/tesftvid.MOV`,
     typeRenduFinal: 'video',
     renduFinalArray: true,
     renduFinalContent: [
       [
-        `/assets/projects/rolland-garros/rendu-final10.png`,
-        `/assets/projects/rolland-garros/rendu-final9.png`,
+        `/assets/projects/RetrofitAR/testvid.MOV`,
+        `/assets/projects/RetrofitAR/testvid.MOV`,
       ],
       [
         `/assets/projects/rolland-garros/rendu-final8.png`,
