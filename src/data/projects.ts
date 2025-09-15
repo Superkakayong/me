@@ -5,22 +5,23 @@ export const projects: Array<ProjectType> = [
   {
     id: 0,
     title: `RetrofitAR - Future of Construction`,
-    imgPath: '/assets/projects/RetrofitAR/testvid.MOV',
+    imgPath: '/assets/projects/RetrofitAR/cover/cover.mov',
     mainsTag: ['MIXED REALITY'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
     imgAbout: '/assets/projects/RetrofitAR/testvid.MOV',
     client: [
-      `An Industrial Level`,
+      `An Industrial-Level`,
       `Mixed Reality Application`,
       `For the Construction Industry`
     ],
     role: [
       `Skillset:`,
-      `Product Design`,
-      `Project Management`,
-      `Human Computer Interaction (HCI)`,
-      `Product Development: Unity3D, Mixed Reality Toolkit (MRTK), Spatial Computing, C#`
+      `Unity3D, C#`,
+      `Computer Vision`,
+      `Spatial Computing`,
+      `Mixed Reality Toolkit (MRTK)`,
+      `Human Computer Interaction (HCI)`
     ],
     credits: [
       `Roles:`,
