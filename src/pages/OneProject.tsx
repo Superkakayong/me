@@ -42,6 +42,7 @@ export const OneProject = () => {
             }
             type={projects[index].typeRenduFinal}
             hrefButton={projects[index].hrefButtonRenduFinal}
+            videoPoster={projects[index].videoPoster}
             showTitle={true}
           />{' '}
           <RenduFinalArray
@@ -60,6 +61,7 @@ export const OneProject = () => {
           }
           type={projects[index].typeRenduFinal}
           hrefButton={projects[index].hrefButtonRenduFinal}
+            videoPoster={projects[index].videoPoster}
           showTitle={true}
         />
       )
@@ -97,7 +99,7 @@ export const OneProject = () => {
         <ImgProjectContainer>
           <ImgProject
             loading='lazy'
-            src={projects[index].imgAccueil}
+            src={projects[index].imgAbout}
             alt='Photo projet'
           />
         </ImgProjectContainer>

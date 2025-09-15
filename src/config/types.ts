@@ -11,7 +11,7 @@ export type ProjectType = {
   mainsTag: Array<string>
   secondsTags: Array<string>
   filter: string
-  imgAccueil: string
+  imgAbout: string
   client: Array<string>
   role: Array<string>
   credits: Array<string>
@@ -21,6 +21,8 @@ export type ProjectType = {
   typeRenduFinal: string
   imagePathRenduFinal?: string
   videoPathRenduFinal?: string
+  /** optional poster image URL to use as video cover */
+  videoPoster?: string
   renduFinalArray: boolean
   renduFinalContent?: Array<Array<string>>
 }

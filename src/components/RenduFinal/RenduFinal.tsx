@@ -18,6 +18,7 @@ type RenduFinalProps = {
   url: string | undefined
   type: string
   hrefButton: string | undefined
+  videoPoster?: string | undefined // Dayong: optional poster image for video
   showTitle?: boolean
 }
 
@@ -25,14 +26,16 @@ export const RenduFinal: FC<RenduFinalProps> = ({
   url,
   type,
   hrefButton,
+  videoPoster,
   showTitle,
 }) => {
   return (
     <RenduFinalContainer>
-      {showTitle && <Title>RENDU FINAL</Title>}
+      {showTitle && <Title>DEMO</Title>}
       {type === 'video' ? (
         <VideoContainer>
-          <Video controls>
+          {/* Dayong: support an optional poster image for the video */}
+          <Video controls poster={videoPoster}>
             <source src={url} />
           </Video>
         </VideoContainer>
