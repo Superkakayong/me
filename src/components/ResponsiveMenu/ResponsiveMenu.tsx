@@ -31,13 +31,13 @@ export const ResponsiveMenu: FC<ResponsiveMenuProps> = ({ active }) => {
     >
       <LinkContainer>
         <Link to='/'>
-          <Button size={'md'} text={'ACCUEIL'} active={true} />
+          <Button size={'md'} text={'HOME'} active={true} />
         </Link>
         <Link to='/about'>
-          <Button size={'md'} text={'A PROPOS'} active={true} />
+          <Button size={'md'} text={'ABOUT'} active={true} />
         </Link>
         <Link to='/projects'>
-          <Button size={'md'} text={'PROJETS'} active={true} />
+          <Button size={'md'} text={'PROJECTS'} active={true} />
         </Link>
       </LinkContainer>
     </MenuResponsiveContainer>
