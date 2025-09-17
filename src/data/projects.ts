@@ -5,11 +5,11 @@ export const projects: Array<ProjectType> = [
   {
     id: 0,
     title: `RetrofitAR - Future of Construction`,
-    imgPath: '/assets/projects/RetrofitAR/cover/cover.mov',
+    imgPath: '/assets/projects/RetrofitAR/thumbnail/thumbnail.mov',
     mainsTag: ['MIXED REALITY'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
-    imgAbout: '/assets/projects/RetrofitAR/testvid.MOV',
+    imgAbout: '/assets/projects/RetrofitAR/cover.png',
     client: [
       `An Industrial-Level`,
       `Mixed Reality Application`,

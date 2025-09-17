@@ -48,6 +48,12 @@ export const ImgProjectContainer = styled.div`
     height: 25vh;
   }
 `
+// Dayong: force imgAbout (ImgProject) to be 16:9 aspect ratio
+// export const ImgProjectContainer = styled.div`
+//   width: 100vw;
+//   aspect-ratio: 16 / 9;
+//   max-height: 65vh; /* 可选：不超过原来的高度 */
+// `
 
 export const ImgProject = styled.img`
   width: 100%;
