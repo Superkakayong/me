@@ -51,9 +51,9 @@ export const projects: Array<ProjectType> = [
     ],
     renduFinal: true,
     hrefButtonRenduFinal: '#',
-  videoPathRenduFinal: `/assets/projects/RetrofitAR/shed/shed.mov/`,
-  // optional poster image for the video (use an existing image or add a dedicated poster)
-  videoPoster: '/assets/projects/RetrofitAR/shed/shed.jpg',
+    videoPathRenduFinal: `https://www.youtube.com/watch?v=zx91N345Wzc`,
+    // Dayong: Optional poster image for the video (use an existing image or add a dedicated poster)
+    videoPoster: '/assets/projects/RetrofitAR/shed/shed.jpg',
     typeRenduFinal: 'video',
     renduFinalArray: true,
     renduFinalContent: [

@@ -19,7 +19,7 @@ import {
 //Components
 import { Credits } from '../components/Credits/Credits'
 import { DescriptionProject } from '../components/DescriptionProject/DescriptionProject'
-import { RenduFinal } from '../components/RenduFinal/RenduFinal'
+import { RenderFinal } from '../components/RenderFinal/RenderFinal'
 import { PageTransition } from '../components/PageTransition/PageTransition'
 import { RenduFinalArray } from '../components/RenduFinalArray/RenduFinalArray'
 
@@ -34,7 +34,7 @@ export const OneProject = () => {
     if (projects[index].renduFinal && projects[index].renduFinalArray) {
       return (
         <>
-          <RenduFinal
+          <RenderFinal
             url={
               projects[index].typeRenduFinal === 'video'
                 ? projects[index].videoPathRenduFinal
@@ -53,7 +53,7 @@ export const OneProject = () => {
       )
     } else if (projects[index].renduFinal && !projects[index].renduFinalArray) {
       return (
-        <RenduFinal
+        <RenderFinal
           url={
             projects[index].typeRenduFinal === 'video'
               ? projects[index].videoPathRenduFinal
