@@ -5,7 +5,7 @@ export const projects: Array<ProjectType> = [
   {
     id: 0,
     title: `RetrofitAR - Future of Construction`,
-    imgPath: '/assets/projects/RetrofitAR/thumbnail/thumbnail.mov',
+    imgPath: '/assets/projects/RetrofitAR/thumbnail/thumbnail.mp4',
     mainsTag: ['MIXED REALITY'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
@@ -58,8 +58,8 @@ export const projects: Array<ProjectType> = [
     renderFinalArray: true,
     renderFinalContent: [
       [
-        `/assets/projects/RetrofitAR/testvid.MOV`,
-        `/assets/projects/RetrofitAR/testvid.MOV`,
+        `/assets/projects/RetrofitAR/testvid.mp4`,
+        `/assets/projects/RetrofitAR/testvid.mp4`,
       ],
       [
         `/assets/projects/rolland-garros/rendu-final8.png`,
