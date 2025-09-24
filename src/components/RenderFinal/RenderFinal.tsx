@@ -33,7 +33,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
   const isYouTube = url ? /youtube.com|youtu.be/.test(url) : false
   return (
     <RenduFinalContainer>
-      {showTitle && <Title>DEMO</Title>}
+      {showTitle && <Title>DEMONSTRATION</Title>}
       {type === 'video' ? (
         // if it's a YouTube url, render the lightweight preview instead of loading iframe immediately
         isYouTube ? (
