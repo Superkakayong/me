@@ -58,22 +58,22 @@ export const projects: Array<ProjectType> = [
     renderFinalArray: true,
     renderFinalContent: [
       [
-        `/assets/projects/RetrofitAR/testvid.mp4`,
-        `/assets/projects/RetrofitAR/testvid.mp4`,
+        `https://youtu.be/qhf9uMGCIiI`,
+        `/assets/projects/RetrofitAR/shed/shed.jpg`,
       ],
-      [
-        `/assets/projects/rolland-garros/rendu-final8.png`,
-        `/assets/projects/rolland-garros/rendu-final7.png`,
-        `/assets/projects/rolland-garros/rendu-final6.png`,
-      ],
-      [
-        `/assets/projects/rolland-garros/rendu-final5.png`,
-        `/assets/projects/rolland-garros/rendu-final4.png`,
-      ],
-      [
-        `/assets/projects/rolland-garros/rendu-final3.png`,
-        `/assets/projects/rolland-garros/rendu-final2.png`,
-      ],
+      // [
+      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
+      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
+      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
+      // ],
+      // [
+      //   `/assets/projects/rolland-garros/rendu-final5.png`,
+      //   `/assets/projects/rolland-garros/rendu-final4.png`,
+      // ],
+      // [
+      //   `/assets/projects/rolland-garros/rendu-final3.png`,
+      //   `/assets/projects/rolland-garros/rendu-final2.png`,
+      // ],
     ],
   },
   {
