@@ -40,7 +40,7 @@ export const projects: Array<ProjectType> = [
       },
       {
         title: `Tech Specs`,
-        desc: `QR Code Recognition (Computer Vision, HCI)\n\nWe leveraged QR codes for robust and reliable tracking of panel blocks (PBs) in dynamic outdoor environments. Each PB is tagged with a unique QR code, allowing the HoloLens 2 to quickly and accurately identify and track individual blocks during installation. This approach ensures precise placement guidance, even under challenging lighting conditions and varying weather.\n\nSpatial Mapping and Anchoring\n\nWe developed a custom spatial mapping and anchoring system based on Azure services that allows the HoloLens 2 to create a detailed 3D map of the building façade. This enables the application to accurately position virtual PBs in relation to the real-world structure, ensuring that workers receive precise placement instructions.\n\nPrecise, Concise, and User-fridnely UX/UI Design\n\nWe utilized Microsoft’s Mixed Reality Toolkit (MRTK) to streamline development and implement best practices for user interaction and experience design. MRTK provided a robust framework for building intuitive interfaces and interactions tailored to the HoloLens 2 platform.`,
+        desc: `QR Code Recognition (Computer Vision, HCI)\n\nWe leveraged QR codes for robust and reliable tracking of panel blocks (PBs) in dynamic outdoor environments. Each PB is tagged with a unique QR code, allowing the HoloLens 2 to quickly and accurately identify and track individual blocks during installation. This approach ensures precise placement guidance, even under challenging lighting conditions and varying weather.\n\nSpatial Mapping and Anchoring\n\nWe developed a custom spatial mapping and anchoring system based on Azure services that allows the HoloLens 2 to create a detailed 3D map of the building façade. This enables the application to accurately position virtual PBs in relation to the real-world structure, ensuring that workers receive precise placement instructions.\n\nPrecise, Concise, and User-fridnely UX/UI Design\n\nWe utilized Microsoft’s Mixed Reality Toolkit (MRTK) to streamline development and implement best practices for user interaction and experience design. We developed a robust framework for building intuitive interfaces and interactions tailored to the HoloLens 2 platform. User can simply show/hide the menu system by raising/lowering their palms to interact with the AR system.`,
         side: 'right',
       },
       // {
@@ -59,21 +59,8 @@ export const projects: Array<ProjectType> = [
     renderFinalContent: [
       [
         `https://youtu.be/qhf9uMGCIiI`,
-        `/assets/projects/RetrofitAR/shed/shed.jpg`,
+        `/assets/projects/RetrofitAR/unity/lsa.png`,
       ],
-      // [
-      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
-      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
-      //   `/assets/projects/RetrofitAR/shed/shed.jpg`,
-      // ],
-      // [
-      //   `/assets/projects/rolland-garros/rendu-final5.png`,
-      //   `/assets/projects/rolland-garros/rendu-final4.png`,
-      // ],
-      // [
-      //   `/assets/projects/rolland-garros/rendu-final3.png`,
-      //   `/assets/projects/rolland-garros/rendu-final2.png`,
-      // ],
     ],
   },
   {
