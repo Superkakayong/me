@@ -19,7 +19,7 @@ import {
 //Components
 import { Credits } from '../components/Credits/Credits'
 import { DescriptionProject } from '../components/DescriptionProject/DescriptionProject'
-import { RenduFinal } from '../components/RenduFinal/RenduFinal'
+import { RenderFinal } from '../components/RenderFinal/RenderFinal'
 import { PageTransition } from '../components/PageTransition/PageTransition'
 import { RenduFinalArray } from '../components/RenduFinalArray/RenduFinalArray'
 
@@ -31,42 +31,44 @@ export const OneProject = () => {
   const index = Number(location.pathname.replace('/one-project/', ''))
 
   const renderRenduFinal = () => {
-    if (projects[index].renduFinal && projects[index].renduFinalArray) {
+    if (projects[index].renderFinal && projects[index].renderFinalArray) {
       return (
         <>
-          <RenduFinal
+          <RenderFinal
             url={
-              projects[index].typeRenduFinal === 'video'
-                ? projects[index].videoPathRenduFinal
-                : projects[index].imagePathRenduFinal
+              projects[index].typeRenderFinal === 'video'
+                ? projects[index].videoPathRenderFinal
+                : projects[index].imagePathRenderFinal
             }
-            type={projects[index].typeRenduFinal}
-            hrefButton={projects[index].hrefButtonRenduFinal}
+            type={projects[index].typeRenderFinal}
+            hrefButton={projects[index].hrefButtonRenderFinal}
+            videoPoster={projects[index].videoPoster}
             showTitle={true}
           />{' '}
           <RenduFinalArray
-            renduFinalContent={projects[index].renduFinalContent}
+            renduFinalContent={projects[index].renderFinalContent}
             showTitle={false}
           />
         </>
       )
-    } else if (projects[index].renduFinal && !projects[index].renduFinalArray) {
+    } else if (projects[index].renderFinal && !projects[index].renderFinalArray) {
       return (
-        <RenduFinal
+        <RenderFinal
           url={
-            projects[index].typeRenduFinal === 'video'
-              ? projects[index].videoPathRenduFinal
-              : projects[index].imagePathRenduFinal
+            projects[index].typeRenderFinal === 'video'
+              ? projects[index].videoPathRenderFinal
+              : projects[index].imagePathRenderFinal
           }
-          type={projects[index].typeRenduFinal}
-          hrefButton={projects[index].hrefButtonRenduFinal}
+          type={projects[index].typeRenderFinal}
+          hrefButton={projects[index].hrefButtonRenderFinal}
+            videoPoster={projects[index].videoPoster}
           showTitle={true}
         />
       )
-    } else if (!projects[index].renduFinal && projects[index].renduFinalArray) {
+    } else if (!projects[index].renderFinal && projects[index].renderFinalArray) {
       return (
         <RenduFinalArray
-          renduFinalContent={projects[index].renduFinalContent}
+          renduFinalContent={projects[index].renderFinalContent}
           showTitle={true}
         />
       )
@@ -97,7 +99,7 @@ export const OneProject = () => {
         <ImgProjectContainer>
           <ImgProject
             loading='lazy'
-            src={projects[index].imgAccueil}
+            src={projects[index].imgAbout}
             alt='Photo projet'
           />
         </ImgProjectContainer>

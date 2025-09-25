@@ -11,16 +11,18 @@ export type ProjectType = {
   mainsTag: Array<string>
   secondsTags: Array<string>
   filter: string
-  imgAccueil: string
+  imgAbout: string
   client: Array<string>
   role: Array<string>
   credits: Array<string>
   description: Array<DescriptionType>
-  renduFinal: boolean
-  hrefButtonRenduFinal?: string
-  typeRenduFinal: string
-  imagePathRenduFinal?: string
-  videoPathRenduFinal?: string
-  renduFinalArray: boolean
-  renduFinalContent?: Array<Array<string>>
+  renderFinal: boolean
+  hrefButtonRenderFinal?: string
+  typeRenderFinal: string
+  imagePathRenderFinal?: string
+  videoPathRenderFinal?: string
+  /** optional poster image URL to use as video cover */
+  videoPoster?: string
+  renderFinalArray: boolean
+  renderFinalContent?: Array<Array<string>>
 }

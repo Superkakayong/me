@@ -16,7 +16,7 @@ export const RenduFinalContainer = styled.div`
 
 export const Title = styled.h4`
   color: ${colors.primary};
-  font-size: ${fontSize.xl};
+  font-size: ${fontSize.xxl};
   font-family: ${fonts.OTR};
   text-transform: uppercase;
   letter-spacing: 2px;

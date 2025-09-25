@@ -11,6 +11,8 @@ export const Description = styled.p`
   font-weight: normal;
   letter-spacing: 1px;
   line-height: 1.2;
+  /* Dayong: allow \n in project description strings to create line breaks */
+  white-space: pre-wrap;
   margin-top: 1em;
 
   @media ${mediaSize.phone} {

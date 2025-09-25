@@ -10,7 +10,9 @@ import {
   TwoCol,
   ThreeCol,
   Img,
+  Video,
 } from './RenduFinalArray.style'
+import { YouTubePreview } from '../YouTubePreview/YouTubePreview'
 
 type RenduFinalArrayProps = {
   renduFinalContent: Array<Array<string>> | undefined
@@ -31,13 +33,45 @@ export const RenduFinalArray: FC<RenduFinalArrayProps> = ({
 
   return (
     <RenduFinalContainer>
-      {showTitle && <Title>RENDU FINAL</Title>}
+      {showTitle && <Title>DEMO</Title>}
       <ArrayContainer>
         {renduFinalContent?.map((content) => {
+          if (content.length === 1) {
+            const src = content[0]
+            const isYouTube = /youtube.com|youtu.be/.test(src)
+            const isVideo = /\.(mp4|webm|mov)$/i.test(src)
+
+            return (
+              <div key={uuid()} style={{ width: '100%' }}>
+                {isYouTube ? (
+                  <YouTubePreview url={src} lazy={false} />
+                ) : isVideo ? (
+                  <Video controls>
+                    <source src={src} />
+                  </Video>
+                ) : (
+                  <Img key={uuid()} src={src} />
+                )}
+              </div>
+            )
+          }
+
           if (content.length === 2) {
             return (
               <TwoCol key={uuid()}>
                 {content.map((img) => {
+                  const isYouTube = /youtube.com|youtu.be/.test(img)
+                  const isVideo = /\.(mp4|webm|mov)$/i.test(img)
+                  if (isYouTube) {
+                    return <YouTubePreview key={uuid()} url={img} lazy={true} />
+                  }
+                  if (isVideo) {
+                    return (
+                      <Video key={uuid()} controls>
+                        <source src={img} />
+                      </Video>
+                    )
+                  }
                   return <Img key={uuid()} src={img} />
                 })}
               </TwoCol>
@@ -46,11 +80,32 @@ export const RenduFinalArray: FC<RenduFinalArrayProps> = ({
             return (
               <ThreeCol key={uuid()}>
                 {content.map((img, index) => {
+                  const isYouTube = /youtube.com|youtu.be/.test(img)
+                  const isVideo = /\.(mp4|webm|mov)$/i.test(img)
                   if (index === 1) {
                     return (
                       <div key={uuid()} style={responsiveArray}>
-                        <Img key={uuid()} src={img} />
+                        {isYouTube ? (
+                          <YouTubePreview key={uuid()} url={img} lazy={true} />
+                        ) : isVideo ? (
+                          <Video key={uuid()} controls>
+                            <source src={img} />
+                          </Video>
+                        ) : (
+                          <Img key={uuid()} src={img} />
+                        )}
                       </div>
+                    )
+                  }
+
+                  if (isYouTube) {
+                    return <YouTubePreview key={uuid()} url={img} lazy={true} />
+                  }
+                  if (isVideo) {
+                    return (
+                      <Video key={uuid()} controls>
+                        <source src={img} />
+                      </Video>
                     )
                   }
                   return <Img key={uuid()} src={img} />
