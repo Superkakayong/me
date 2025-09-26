@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { colors, mediaSize } from '../../config/variables'
 
 //Photo
-import PhotoNewt from '/assets/photo-newt.jpg'
+import PhotoDayong from '/assets/dayong.jpg'
 
 export const StickersContainer = styled.div`
   width: 11em;
@@ -26,7 +26,7 @@ export const InnerCircle = styled.div`
   width: 7.5em;
   height: 7.5em;
   border-radius: 50%;
-  background: url(${PhotoNewt});
+  background: url(${PhotoDayong});
   background-size: cover;
   background-position: center;
   position: absolute;

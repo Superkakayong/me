@@ -71,6 +71,29 @@ export const ExperienceContainer = styled.div`
   }
 `
 
+// Dayong
+export const MainUnProExperienceContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2em;
+`
+
+export const UnProExperienceContainer = styled.div`
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1em;
+
+  @media ${mediaSize.phone} {
+    width: 100%;
+  }
+`
+
 export const TitleContainer = styled.div<TitleContainer>`
   display: flex;
   justify-container: center;

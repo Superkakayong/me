@@ -8,6 +8,8 @@ import {
   GraphismeContainer,
   MainExperienceContainer,
   MainGraphismeContainer,
+  MainUnProExperienceContainer,
+  UnProExperienceContainer,
   TitleContainer,
 } from '../styles/pages/About.style'
 
@@ -45,6 +47,16 @@ export const About = () => {
     isHoverExperience(false)
   }
 
+  const [hoverUnProExperience, isHoverUnProExperience] = useState<boolean>(false)
+
+  const handleMouseEnterUnProExperience = (): void => {
+    isHoverUnProExperience(true)
+  }
+
+  const handleMouseLeaveUnProExperience = (): void => {
+    isHoverUnProExperience(false)
+  }
+
   let responsiveButton = {}
 
   if (window.matchMedia('(max-width: 576px)').matches) {
@@ -56,68 +68,94 @@ export const About = () => {
   return (
     <PageTransition>
       <AboutContainer>
+        
         <MainGraphismeContainer>
           <StickersPhoto />
           <GraphismeContainer>
             <TitleContainer active={hoverGraphisme}>
               <FaArrowRight className='arrowRight' color={colors.primary} />
-              <TitleAbout>LA CREATION & MOI</TitleAbout>
+              <TitleAbout>WHO AM I?</TitleAbout>
               <FaArrowLeft className='arrowLeft' color={colors.primary} />
             </TitleContainer>
             <DescriptionAbout
               handleMouseEnter={handleMouseEnterGraphisme}
               handleMouseLeave={handleMouseLeaveGraphisme}
             >
-              Hey ! Je m’appelle Antoine Gervais, je suis un étudiant de 20 ans
-              résident dans l’Oise. Je suis actuellement en deuxième année à
-              Ynov Paris Campus en bachelor création et design à Nanterre.
-              Depuis tout petit, j’adore la création, lorsque j’étais en
-              primaire, j’aimais beaucoup dessiner et faire de la peinture,
-              j’étais très manuel. C’est au collège que j’ai commencé à toucher
-              à de la création digitale, dès le collège à travers des montages
-              de vidéos sur YouTube. C’est à partir de là que j’ai développé une
-              grande admiration pour le cinéma et notamment sur la
-              postproduction, en particulier les effets spéciaux. C’est en
-              m’intéressant au métier de vfx artist que je découvre le motion
-              design. Au même moment, je participais au développement
-              d’associations esport qui m’ont donné l’oppor-tunité de me lancer
-              dans le MIXED REALITY et le graphisme.
+              Yo what's up. My name is Dayong Wu, and I was born and raised in Dongguan, 
+              a small but booming city 
+              in southern China, right next to Hong Kong. I am a creative engineer, 
+              designer, and content creator. 
+            </DescriptionAbout>
+            <DescriptionAbout
+              handleMouseEnter={handleMouseEnterGraphisme}
+              handleMouseLeave={handleMouseLeaveGraphisme}
+            >
+              Dayong Wu, or 吴大庸 in Chinese, means "universal harmony." 
+              As I keep learning and using technology to solve real-world problems, I see this
+              as my life purpose to utilize modern science to support people to flourish 
+              and find the TAO along their paths.
             </DescriptionAbout>
           </GraphismeContainer>
         </MainGraphismeContainer>
+
         <MainExperienceContainer>
           <ExperienceContainer>
             <TitleContainer active={hoverExperience}>
               <FaArrowRight className='arrowRight' color={colors.primary} />
-              <TitleAbout>MON EXPERIENCE</TitleAbout>
+              <TitleAbout>PROFESSIONAL EXPERIENCE</TitleAbout>
               <FaArrowLeft className='arrowLeft' color={colors.primary} />
             </TitleContainer>
             <DescriptionAbout
               handleMouseEnter={handleMouseEnterExperience}
               handleMouseLeave={handleMouseLeaveExperience}
             >
-              Mon expérience professionnelle débute dès ma première création. Ma
-              première animation en MIXED REALITY est un cv vidéo pour un coach
-              et un manager esport. À partir de cette vidéo, j’ai décroché mes
-              premiers clients, avec qui j’ai affiné ma technique et adapté mes
-              créations à leurs demandes. En parallèle, j’ai rejoins InFuria
-              Esport, une association compétitive esport, en tant que motion
-              designer. Ma mission principale était de donner une plus value à
-              leur communication à travers l’animation, même si j’ai eu
-              l’opportunité de travailler sur des projets plus conséquents comme
-              des projets de musiques et de web series. Après 2 ans chez
-              InFuria, je suis rentré à Paris Ynov Campus pour développer mon
-              sens créatif et mes qualités technique. Au même moment, je rejoins
-              l’assoication BeHard Esport en tant que MIXED REALITYer et
-              graphiste. Quelques mois après, je deviens directeur artistique de
-              l’association ou je dirige une petite équipe de 4 créatifs. Avec
-              BeHard, j’ai eu l’occasion de développé plusieurs identités
-              visuelles, plusieurs vidéos de communications (montage vidéo,
-              MIXED REALITY et production 3D) et une collection textile autour
-              de l’équipe.
+              I got my Master's degree in Computer Science from Boston University and a Bachelor's degree
+              in Digital Media Technology from Xiamen University, China. After graduated from BU, 
+              I have been working at Fraunhofer USA for 2.5 years as a Computer Scientist. My experience
+              spans Human-Computer Interaction (HCI), wearables, 3D Modeling, Mixed Reality, and Human-AI systems.
+            </DescriptionAbout>
+            <DescriptionAbout
+              handleMouseEnter={handleMouseEnterExperience}
+              handleMouseLeave={handleMouseLeaveExperience}
+            >
+              As the lead Augmented Reality (AR) developer at Fraunhofer, I led the design and development
+              of RetrofitAR, an industrial-scale Augmented Reality application on Microsoft HoloLens2 
+              to provide real-time and step-by-step virtual guidance for semi-skilled crews (e.g. house owners) 
+              to install panel blocks in residential retrofits.
             </DescriptionAbout>
           </ExperienceContainer>
         </MainExperienceContainer>
+
+        <MainUnProExperienceContainer>
+          <UnProExperienceContainer>
+            <TitleContainer active={hoverUnProExperience}>
+              <FaArrowRight className='arrowRight' color={colors.primary} />
+              <TitleAbout>"UNPROFESSIONAL" EXPERIENCE</TitleAbout>
+              <FaArrowLeft className='arrowLeft' color={colors.primary} />
+            </TitleContainer>
+            <DescriptionAbout
+              handleMouseEnter={handleMouseEnterUnProExperience}
+              handleMouseLeave={handleMouseLeaveUnProExperience}
+            >
+              In parallel to my work, I am an educational social media creator with over 50K followers 
+              across RedNote, TikTok, and WeChat. I focus on teaching practical English to Chinese 
+              elderly learners and introducing Boston’s local culture. 
+              Many of my followers tell me that while AI tools reduce language barriers, 
+              they also make them feel less socially connected in the US. They value my content 
+              because it provides not only instructions but also human warmth and 
+              authentic connection—something AI cannot replace.
+            </DescriptionAbout>
+            <DescriptionAbout
+              handleMouseEnter={handleMouseEnterUnProExperience}
+              handleMouseLeave={handleMouseLeaveUnProExperience}
+            >
+              I am also a passionate soccer ⚽️ player. I played for my undergraduate school team and
+              BU Soccer Club for a short time. I am the starting striker of Harvard Chinese Soccer Team
+              and we won the championship of New England Cup in 2025!
+            </DescriptionAbout>
+          </UnProExperienceContainer>
+        </MainUnProExperienceContainer>
+
         <Button text={'VOIR MON CV'} size={'md'} style={responsiveButton} />
       </AboutContainer>
     </PageTransition>
