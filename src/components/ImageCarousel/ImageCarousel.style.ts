@@ -8,7 +8,7 @@ export const CarouselContainer = styled.div`
   gap: 1rem;
 
   /* Dayong: flex-basis 使用 clamp 保证在不同宽度下合理伸缩
-     280px 最小，45% 为优先，最多 720px */
+     320px 最小，70% 为优先，最多 960px */
   /* Dayong: broaden the default footprint so carousel shows larger on desktop */
   flex: 0 1 clamp(320px, 70%, 960px);
   min-width: 280px;   /* 防止在超窄布局下太小 */

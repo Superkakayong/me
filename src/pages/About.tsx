@@ -9,6 +9,7 @@ import {
   MainExperienceContainer,
   MainGraphismeContainer,
   MainUnProExperienceContainer,
+  CarouselSide,
   UnProExperienceContainer,
   TitleContainer,
 } from '../styles/pages/About.style'
@@ -155,25 +156,26 @@ export const About = () => {
               and we won the championship of New England Cup in 2025!
             </DescriptionAbout>
           </UnProExperienceContainer>
+          <CarouselSide>
+            <ImageCarousel
+              images={[
+                '/assets/dayong/cali.jpg',
+                '/assets/dayong/jelly.jpg',
+                '/assets/dayong/madrid.jpg',
+                '/assets/dayong/met.jpg',
+                '/assets/dayong/cmi.jpg',
+                '/assets/dayong/ar.jpg',
+                '/assets/dayong/yellowstone.jpg',
+                '/assets/dayong/gpt.jpg',
+                '/assets/dayong/antony.jpg',
+                '/assets/dayong/bssc.jpg',
+                '/assets/dayong/champ.jpg',
+                '/assets/dayong/volo.jpg',
+                '/assets/dayong/siu.mp4',
+              ]}
+            />
+          </CarouselSide>
         </MainUnProExperienceContainer>
-
-        <ImageCarousel
-            images={[
-              '/assets/dayong/cali.jpg',
-              '/assets/dayong/jelly.jpg',
-              '/assets/dayong/madrid.jpg',
-              '/assets/dayong/met.jpg',
-              '/assets/dayong/cmi.jpg',
-              '/assets/dayong/ar.jpg',
-              '/assets/dayong/yellowstone.jpg',
-              '/assets/dayong/gpt.jpg',
-              '/assets/dayong/antony.jpg',
-              '/assets/dayong/bssc.jpg',
-              '/assets/dayong/champ.jpg',
-              '/assets/dayong/volo.jpg',
-              '/assets/dayong/siu.mp4',
-            ]}
-          />
 
         <Button text={'VOIR MON CV'} size={'md'} style={responsiveButton} />
       </AboutContainer>
