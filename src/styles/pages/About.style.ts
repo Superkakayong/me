@@ -71,11 +71,11 @@ export const ExperienceContainer = styled.div`
   }
 `
 
-// Dayong
+// Dayong: Adjust container so left carousel and right content are spaced
 export const MainUnProExperienceContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 2em;
 `

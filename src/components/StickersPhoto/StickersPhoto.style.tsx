@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { colors, mediaSize } from '../../config/variables'
 
 //Photo
-import PhotoDayong from '/assets/dayong.jpg'
+import PhotoDayong from '/assets/dayong/cali.jpg'
 
 export const StickersContainer = styled.div`
   width: 11em;

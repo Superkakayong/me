@@ -25,6 +25,7 @@ import { DescriptionAbout } from '../components/DescriptionAbout/DescriptionAbou
 import { TitleAbout } from '../components/TitleAbout/TitleAbout'
 import { Button } from '../components/Button/Button'
 import { PageTransition } from '../components/PageTransition/PageTransition'
+import { ImageCarousel } from '../components/ImageCarousel'
 
 export const About = () => {
   const [hoverGraphisme, isHoverGraphisme] = useState<boolean>(false)
@@ -155,6 +156,24 @@ export const About = () => {
             </DescriptionAbout>
           </UnProExperienceContainer>
         </MainUnProExperienceContainer>
+
+        <ImageCarousel
+            images={[
+              '/assets/dayong/cali.jpg',
+              '/assets/dayong/jelly.jpg',
+              '/assets/dayong/madrid.jpg',
+              '/assets/dayong/met.jpg',
+              '/assets/dayong/cmi.jpg',
+              '/assets/dayong/ar.jpg',
+              '/assets/dayong/yellowstone.jpg',
+              '/assets/dayong/gpt.jpg',
+              '/assets/dayong/antony.jpg',
+              '/assets/dayong/bssc.jpg',
+              '/assets/dayong/champ.jpg',
+              '/assets/dayong/volo.jpg',
+              '/assets/dayong/siu.mp4',
+            ]}
+          />
 
         <Button text={'VOIR MON CV'} size={'md'} style={responsiveButton} />
       </AboutContainer>
