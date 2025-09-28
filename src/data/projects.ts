@@ -6,7 +6,7 @@ export const projects: Array<ProjectType> = [
     id: 0,
     title: `RetrofitAR - Future of Construction`,
     imgPath: '/assets/projects/RetrofitAR/thumbnail/thumbnail.mp4',
-    mainsTag: ['MIXED REALITY'],
+    mainsTag: ['MIXED REALITY', 'Computer Vision'],
     secondsTags: ['ILLUSTRATION'],
     filter: 'ALL',
     imgAbout: '/assets/projects/RetrofitAR/cover.png',
@@ -59,18 +59,22 @@ export const projects: Array<ProjectType> = [
     renderFinalContent: [
       [
         `https://youtu.be/qhf9uMGCIiI`,
-        `/assets/projects/RetrofitAR/unity/lsa.png`,
+        `/assets/projects/RetrofitAR/ui/magicball.jpg`,
+      ],
+      [
+        `/assets/projects/RetrofitAR/ui/flowchart.png`,
+        `/assets/projects/RetrofitAR/ui/lsa.png`,
       ],
     ],
   },
   {
     id: 1,
-    title: `LIVRET - MUSEE D'ORSAY`,
-    imgPath: '/assets/projects/livret-musee/livret-musee-vignette.png',
-    mainsTag: ['GRAPHIC DESIGN'],
+    title: `3D Mesh Generation`,
+    imgPath: '/assets/projects/MeshGeneration/thumbnail.png',
+    mainsTag: ['3D Modeling', 'Python'],
     secondsTags: ['MISE EN PAGE', 'TYPOGRAPHIE'],
     filter: 'ALL',
-    imgAbout: '/assets/projects/livret-musee/livret-musee-accueil.png',
+    imgAbout: '/assets/projects/MeshGeneration/thumbnail.jpg',
     client: [
       `CLIENTS :`,
       `PROJET SCOLAIRE`,
