@@ -151,7 +151,7 @@ export const YouTubePreview: React.FC<Props> = ({ url, poster, lazy = true }) =>
       ) : (
         <IframeWrapper>
           <StyledIframe
-            src={`https://www.youtube.com/embed/${id}?autoplay=1&rel=0`}
+            src={`https://www.youtube.com/embed/${id}?autoplay=1&rel=0&mute=1&playsinline=1`}
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowFullScreen
             title='YouTube preview'

@@ -30,7 +30,10 @@ export const VideoContainer = styled.div`
   }
 `
 
-export const Video = styled.video`
+export const Video = styled.video.attrs({
+  muted: true,
+  playsInline: true,
+})`
   width: 100%;
   border-radius: 10px;
   border: 2px solid ${colors.primary};
