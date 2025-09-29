@@ -74,21 +74,22 @@ export const projects: Array<ProjectType> = [
     mainsTag: ['3D Modeling', 'Python'],
     secondsTags: ['MISE EN PAGE', 'TYPOGRAPHIE'],
     filter: 'ALL',
-    imgAbout: '/assets/projects/MeshGeneration/thumbnail.jpg',
+    imgAbout: '/assets/projects/MeshGeneration/cover.png',
     client: [
-      `CLIENTS :`,
-      `PROJET SCOLAIRE`,
-      `YNOV PARIS CAMPUS`,
-      `MUSEE D'ORSAY`,
+      `A Tool that can Automatically Convert`,
+      `Raw Scanned Point Cloud Data into`,
+      `Watertigiht 3D Meshes for 3D Printing`
     ],
     role: [
-      `ROLE :`,
-      `DIRECTION ARTISTIQUE`,
-      `GRAPHIC DESIGN`,
-      `TYPOGRAPHIE`,
-      `MISE EN PAGE`,
+      `Skillset:`,
+      `Python, Open3D`,
+      `MeshLab, Blender`,
+      `3D Imaging, 3D Printing`,
     ],
-    credits: [`CREDITS :`],
+    credits: [
+      `Roles:`,
+      `StartUp Tech Collaborator`,
+    ],
     description: [
       {
         title: `PRE-PRODUCTION`,
