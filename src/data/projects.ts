@@ -69,7 +69,7 @@ export const projects: Array<ProjectType> = [
   },
   {
     id: 1,
-    title: `3D Mesh Generation`,
+    title: `Auto-3D Mesh Generation`,
     imgPath: '/assets/projects/MeshGeneration/thumbnail.png',
     mainsTag: ['3D Modeling', 'Python'],
     secondsTags: ['MISE EN PAGE', 'TYPOGRAPHIE'],
@@ -87,7 +87,7 @@ export const projects: Array<ProjectType> = [
       `3D Imaging, 3D Printing`,
     ],
     credits: [
-      `Roles:`,
+      `Role:`,
       `StartUp Tech Collaborator`,
     ],
     description: [
@@ -108,10 +108,10 @@ export const projects: Array<ProjectType> = [
       },
     ],
     renderFinal: true,
-    hrefButtonRenderFinal: '#',
-    typeRenderFinal: 'img',
-    imagePathRenderFinal:
-      '/assets/projects/livret-musee/livret-musee-accueil.png',
+    // Dayong: use inline PDF preview for project deliverable
+    hrefButtonRenderFinal: '/assets/projects/MeshGeneration/mesh.pdf',
+    typeRenderFinal: 'pdf',
+    documentPathRenderFinal: '/assets/projects/MeshGeneration/mesh.pdf',
     renderFinalArray: false,
   },
   {

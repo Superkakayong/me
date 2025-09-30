@@ -23,6 +23,8 @@ export type ProjectType = {
   videoPathRenderFinal?: string
   /** optional poster image URL to use as video cover */
   videoPoster?: string
+  // Dayong: optional PDF/document path for inline viewer
+  documentPathRenderFinal?: string
   renderFinalArray: boolean
   renderFinalContent?: Array<Array<string>>
 }
