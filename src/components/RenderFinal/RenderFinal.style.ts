@@ -47,7 +47,8 @@ export const PdfContainer = styled.div`
   border-radius: 10px;
   /* Dayong: remove borders/background so PDF can touch container bounds */
   border: none;
-  overflow: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   background: transparent;
 
   @media ${mediaSize.phone} {
@@ -62,6 +63,8 @@ export const PdfFrame = styled.iframe`
   border: none;
   /* Dayong: rely on PDF page background to avoid surrounding band */
   background: transparent;
+  /* Dayong: ensure iframe content can receive touch scroll gestures */
+  pointer-events: auto;
 `
 
 export const ImgContainer = styled.div`

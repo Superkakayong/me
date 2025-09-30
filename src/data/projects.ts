@@ -92,8 +92,8 @@ export const projects: Array<ProjectType> = [
     ],
     description: [
       {
-        title: `PRE-PRODUCTION`,
-        desc: `Le Musée d’Orsay est un musée pluridisciplinaire exposant la plus riche collection de tableaux impressionnistes et post impressionnistes au monde à l’intérieur de l'ancienne gare d'Orsay à Paris. Ce dernier propose une expérience riche qui mérite de se prolonger au travers d’un livret proposant des informations complémentaires pouvant aussi servir d’accompagnement durant la visite des clients du musée. Pour débuter le projet, la recherche du contenu est primordiale, qu’allons nous mettre comme informations et en quelle quantité ? Toutes ces informations permettent de facilité la recherche graphique pour trouver celle qui conviendra au mieux à la direction artistique du musée et au contenu attendu.`,
+        title: `Why Did I Create This Tool?`,
+        desc: `Our feet deserve better `,
         side: 'left',
       },
       {
