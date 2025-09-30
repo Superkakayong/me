@@ -12,6 +12,7 @@ export const PdfScroll = styled.div`
   align-items: center;
   gap: 1.5rem;
   background: transparent;
+  position: relative;
 
   img {
     width: 100%;
@@ -42,4 +43,33 @@ export const ErrorText = styled.span`
   font-size: ${fontSize.md};
   color: ${colors.error};
   text-align: center;
+`
+
+// Dayong: subtle hint letting users know the PDF area is scrollable
+export const ScrollHint = styled.span`
+  position: sticky;
+  bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(33, 33, 33, 0.75);
+  color: ${colors.secondary};
+  font-family: ${fonts.OTR};
+  font-size: ${fontSize.md};
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  pointer-events: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media ${mediaSize.phone} {
+    font-size: ${fontSize.xs};
+    bottom: 0.6rem;
+  }
 `
