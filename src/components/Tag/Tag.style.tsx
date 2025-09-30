@@ -18,7 +18,6 @@ export const GlobalTag = styled.a<GlobalTag>`
       : props.size === 'md'
       ? fontSize.md
       : fontSize.lg};
-  text-transform: uppercase;
   border-radius: 15px;
   padding: 0.1em 0.8em;
   cursor: pointer;
