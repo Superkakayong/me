@@ -2,7 +2,6 @@
 import React, { FC } from 'react'
 
 //Styles
-// Dayong: include PDF layout primitives for inline document rendering
 import {
   RenduFinalContainer,
   Title,
@@ -11,9 +10,9 @@ import {
   VideoContainer,
   Video,
   PdfContainer,
-  PdfFrame,
 } from './RenderFinal.style'
 import { YouTubePreview } from '../YouTubePreview/YouTubePreview'
+import { PdfViewer } from '../PdfViewer/PdfViewer'
 
 //Components
 import { Button } from '../Button/Button'
@@ -56,12 +55,20 @@ export const RenderFinal: FC<RenderFinalProps> = ({
           </VideoContainer>
         )
       ) : isPdf ? (
+        // Dayong: render inline PDF with pdf.js viewer for desktop & mobile scrolling support
         <PdfContainer>
-          <PdfFrame
-            src={`${url ?? ''}#zoom=page-fit`}
-            title='Project PDF preview'
-            loading='lazy'
-          />
+          {url ? (
+            <PdfViewer file={url} />
+          ) : (
+            // Dayong: fallback button when no inline document source is provided
+            <Button
+              style={{ marginTop: '1.5em' }}
+              text={'OPEN PDF'}
+              size={'md'}
+              href={actionHref}
+              active={true}
+            />
+          )}
         </PdfContainer>
       ) : (
         <ImgContainer>
@@ -75,8 +82,8 @@ export const RenderFinal: FC<RenderFinalProps> = ({
           />
         </ImgContainer>
       )}
-      {/* {isPdf && actionHref && (
-        // Dayong: offer fallback button for opening the PDF in a new tab
+      {isPdf && actionHref && url && (
+        // Dayong: surface explicit "open in new tab" control alongside inline viewer
         <Button
           style={{ marginTop: '1.5em' }}
           text={'OPEN PDF'}
@@ -84,7 +91,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
           href={actionHref}
           active={true}
         />
-      )} */}
+      )}
     </RenduFinalContainer>
   )
 }

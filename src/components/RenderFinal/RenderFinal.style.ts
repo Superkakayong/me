@@ -40,31 +40,13 @@ export const Video = styled.video.attrs({
   object-fit: cover;
 `
 
-// Dayong: container & iframe styles for inline PDF viewer
+// Dayong: wrapper ensures pdf.js canvas list fits layout width
 export const PdfContainer = styled.div`
   width: 75%;
-  height: clamp(60vh, 70vw, 85vh);
-  border-radius: 10px;
-  /* Dayong: remove borders/background so PDF can touch container bounds */
-  border: none;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  background: transparent;
 
   @media ${mediaSize.phone} {
     width: 100%;
-    height: 70vh;
   }
-`
-
-export const PdfFrame = styled.iframe`
-  width: 100%;
-  height: 100%;
-  border: none;
-  /* Dayong: rely on PDF page background to avoid surrounding band */
-  background: transparent;
-  /* Dayong: ensure iframe content can receive touch scroll gestures */
-  pointer-events: auto;
 `
 
 export const ImgContainer = styled.div`
