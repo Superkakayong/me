@@ -15,17 +15,29 @@ export type ButtonProps = {
 
 export const Button: FC<ButtonProps> = ({
   text,
+  href,
   size,
   style,
   active,
   onclick,
 }) => {
+  // Dayong: support href by opening target in a new tab when no explicit handler is provided
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (onclick) {
+      onclick(e)
+      return
+    }
+    if (href) {
+      window.open(href, '_blank', 'noopener,noreferrer')
+    }
+  }
+
   return (
     <GlobalButton
       data-cursor
       style={style}
       size={size}
-      onClick={onclick}
+      onClick={handleClick}
       active={active}
     >
       {text}

@@ -33,24 +33,24 @@ export const Footer = () => {
             GO TO TOP
           </GoTop>
           <LinksContainer>
-            <Links data-cursor href='mailto:antoinegervais.motion@outlook.fr'>
-              MAIL
+            <Links data-cursor href='https://drive.google.com/file/d/1ITvzYozexT7OPSrfn2ntjYBy0L-MRV3P/view?usp=sharing'>
+              RESUME
             </Links>
-            <Links data-cursor href='https://www.behance.net/antoinegvs'>
+            {/* <Links data-cursor href='https://www.behance.net/antoinegvs'>
               BEHANCE
-            </Links>
-            <Links data-cursor href='https://www.instagram.com/newwwwt_/'>
-              INSTRAGRAM
+            </Links> */}
+            <Links data-cursor href='https://www.linkedin.com/in/dayong-w-120a9b227/'>
+              LINKEDIN
             </Links>
             <Links
               data-cursor
-              href='https://www.linkedin.com/in/antoine-gervais-2475911aa/'
+              href='https://www.instagram.com/superkakayong/'
             >
-              LINKEDIN
+              INSTAGRAM
             </Links>
-            <Links data-cursor href='https://twitter.com/newwwwt_'>
+            {/* <Links data-cursor href='https://twitter.com/newwwwt_'>
               TWITTER
-            </Links>
+            </Links> */}
           </LinksContainer>
         </ContentContainer>
       </FooterContainer>

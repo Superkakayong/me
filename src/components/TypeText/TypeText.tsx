@@ -18,7 +18,7 @@ export const TypeText = () => {
 
   return (
     <TypeAnimation
-      sequence={['VR \u002B AR', 1000, 'GEN AI', 1000, 'CREATIVE', 1000]}
+      sequence={['Human-AI', 1000, 'HCI', 1000, 'VR\u002BAR\u002BXR', 1000, 'CREATIVE', 1000]}
       wrapper='h1'
       repeat={Infinity}
       speed={1}

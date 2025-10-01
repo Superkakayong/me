@@ -30,11 +30,23 @@ export const VideoContainer = styled.div`
   }
 `
 
-export const Video = styled.video`
+export const Video = styled.video.attrs({
+  muted: true,
+  playsInline: true,
+})`
   width: 100%;
   border-radius: 10px;
   border: 2px solid ${colors.primary};
   object-fit: cover;
+`
+
+// Dayong: wrapper ensures pdf.js canvas list fits layout width
+export const PdfContainer = styled.div`
+  width: 75%;
+
+  @media ${mediaSize.phone} {
+    width: 100%;
+  }
 `
 
 export const ImgContainer = styled.div`

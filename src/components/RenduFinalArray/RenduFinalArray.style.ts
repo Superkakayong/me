@@ -56,12 +56,17 @@ export const ThreeCol = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
   border-radius: 2px;
+  background: #f5f5f5;
 `
 
-export const Video = styled.video`
+export const Video = styled.video.attrs({
+  muted: true,
+  playsInline: true,
+})`
   width: 100%;
   height: 100%;
   object-fit: cover;

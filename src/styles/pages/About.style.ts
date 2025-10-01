@@ -71,6 +71,55 @@ export const ExperienceContainer = styled.div`
   }
 `
 
+export const MainUnProExperienceContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5em;
+  margin-bottom: 2em;
+
+  @media ${mediaSize.table} {
+    gap: 1.8em;
+  }
+
+  @media ${mediaSize.phone} {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4em;
+  }
+`
+
+export const UnProExperienceContainer = styled.div`
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1em;
+
+  @media ${mediaSize.phone} {
+    width: 100%;
+  }
+`
+
+export const CarouselSide = styled.div`
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  @media ${mediaSize.table} {
+    width: 45%;
+  }
+
+  @media ${mediaSize.phone} {
+    width: 100%;
+    justify-content: center;
+  }
+`
+
 export const TitleContainer = styled.div<TitleContainer>`
   display: flex;
   justify-container: center;

@@ -9,8 +9,10 @@ import {
   ImgContainer,
   VideoContainer,
   Video,
+  PdfContainer,
 } from './RenderFinal.style'
 import { YouTubePreview } from '../YouTubePreview/YouTubePreview'
+import { PdfViewer } from '../PdfViewer/PdfViewer'
 
 //Components
 import { Button } from '../Button/Button'
@@ -31,6 +33,10 @@ export const RenderFinal: FC<RenderFinalProps> = ({
   showTitle,
 }) => {
   const isYouTube = url ? /youtube.com|youtu.be/.test(url) : false
+  // Dayong: detect inline PDF mode for render final
+  const isPdf = type === 'pdf'
+  // Dayong: re-use provided url when no explicit href is supplied
+  const actionHref = hrefButton ?? url
   return (
     <RenduFinalContainer>
       {showTitle && <Title>DEMONSTRATION</Title>}
@@ -48,6 +54,22 @@ export const RenderFinal: FC<RenderFinalProps> = ({
             </Video>
           </VideoContainer>
         )
+      ) : isPdf ? (
+        // Dayong: render inline PDF with pdf.js viewer for desktop & mobile scrolling support
+        <PdfContainer>
+          {url ? (
+            <PdfViewer file={url} />
+          ) : (
+            // Dayong: fallback button when no inline document source is provided
+            <Button
+              style={{ marginTop: '1.5em' }}
+              text={'OPEN PDF'}
+              size={'md'}
+              href={actionHref}
+              active={true}
+            />
+          )}
+        </PdfContainer>
       ) : (
         <ImgContainer>
           <Img loading='lazy' src={url} alt='Rendu final du projet' />
@@ -59,6 +81,16 @@ export const RenderFinal: FC<RenderFinalProps> = ({
             active={true}
           />
         </ImgContainer>
+      )}
+      {isPdf && actionHref && url && (
+        // Dayong: surface explicit "open in new tab" control alongside inline viewer
+        <Button
+          style={{ marginTop: '1.5em' }}
+          text={'DOWNLOAD PDF'}
+          size={'md'}
+          href={actionHref}
+          active={true}
+        />
       )}
     </RenduFinalContainer>
   )

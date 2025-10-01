@@ -35,9 +35,12 @@ export const OneProject = () => {
       return (
         <>
           <RenderFinal
+            // Dayong: choose render asset based on type (video/pdf/image)
             url={
               projects[index].typeRenderFinal === 'video'
                 ? projects[index].videoPathRenderFinal
+                : projects[index].typeRenderFinal === 'pdf'
+                ? projects[index].documentPathRenderFinal ?? projects[index].hrefButtonRenderFinal
                 : projects[index].imagePathRenderFinal
             }
             type={projects[index].typeRenderFinal}
@@ -54,9 +57,12 @@ export const OneProject = () => {
     } else if (projects[index].renderFinal && !projects[index].renderFinalArray) {
       return (
         <RenderFinal
+          // Dayong: choose render asset based on type (video/pdf/image)
           url={
             projects[index].typeRenderFinal === 'video'
               ? projects[index].videoPathRenderFinal
+              : projects[index].typeRenderFinal === 'pdf'
+              ? projects[index].documentPathRenderFinal ?? projects[index].hrefButtonRenderFinal
               : projects[index].imagePathRenderFinal
           }
           type={projects[index].typeRenderFinal}
