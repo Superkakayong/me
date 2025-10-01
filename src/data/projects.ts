@@ -21,7 +21,7 @@ export const projects: Array<ProjectType> = [
       `Computer Vision`,
       `Spatial Computing`,
       `Mixed Reality Toolkit (MRTK)`,
-      `Human Computer Interaction (HCI)`
+      `Human Computer Interaction (HCI)`,
     ],
     credits: [
       `Roles:`,
@@ -69,36 +69,46 @@ export const projects: Array<ProjectType> = [
   },
   {
     id: 1,
-    title: `DiagramAR - An Innovative App for Boston University`,
+    title: `DiagramAR - Visualize Geometry in AR`,
     imgPath: '/assets/projects/DiagramAR/thumbnail.png',
     mainsTag: ['HCI', 'iOS & Android',],
     secondsTags: ['HCI'],
     filter: 'ALL',
     imgAbout: '/assets/projects/DiagramAR/cover.png',
-    client: [`CLIENTS :`, `ANTOINE GERVAIS`],
-    role: [`ROLE :`, `GRAPHIC DESIGN`, `TYPOGRAPHIE`],
-    credits: [`CREDITS :`, `MON EX`],
+    client: [
+      `An Innovative App for`,
+      `Learning CS132 (Linear Algebra) at`,
+      `Boston University`
+    ],
+    role: [
+      `Skillset:`,
+      `Unity3D, Shader, C#`,
+      `Vuforia, iOS, Android`,
+      `Human Computer Interaction (HCI)`,
+      `Augmented Reality, Machine Learning`,
+    ],
+    credits: [
+      `Role:`,
+      `Lead Android Developer`,
+      `Supervisor:`,
+      `Prof. Mark Crovella, Boston University`,
+    ],
     description: [
       {
-        title: `NOTE D'INTENTION`,
-        desc: `J’accorde une grande importance à la typographie au sein d’un projet, explorer les pistes pour développer mes propres caractères est un véritable objectif. Une typographie qui nous repré- sente est une réflexion sur nous-même et les évènements que l’on traverse se retranscriront sur le rendu final, à l’image des peintres de l’époque ou leur style et les couleurs qu’ils appli- quaient évoluaient selon les moments marquants de leur vie. Pour en revenir à moi, malgré le vent glacé et le gris de l’hivers, une lueur de chaleur sommeil en moi. Un rayon de soleil qui traverse le gris des nuages et me rappelle que le beau temps se rapproche. Cette image est l’amour que l’on porte à nos proches et celui qui nous renvoi, c’est cet amour qui nous donne la force dans les moments difficiles. `,
+        title: `DiagramAR: What and Why?`,
+        desc: `As many students have experienced, trying to understand complex 3-dimensional diagrams displayed on a 2-dimensional textbook page can be quite confusing. DiagramAR solves this problem by efficiently converting 2D Matplotlib figures from lecture notes into immersive AR visualizations in real time. The user can move the figure in their surroundings and manipulate the values of the figure’s equations on their smart devices.`,
         side: 'left',
       },
       {
-        title: `LA CREATION DES CARACTERES`,
-        desc: `Mes premiers croquis de caractères étaient très ronds et s’appuyaient de manière frappante sur la forme d’un cœur. On pourrait classer ces premiers essais dans la famille des linéales. Ce n’était pas ce que je recherchais, j’avais besoin de retrouver de la finesse dans toute cette rondeur, y ajouter du détail sans perdre mon idée initiale. En faisant quelques recherches sur chacune des familles, je me suis penché sur les réales qui possèdent des empattements hori- zontaux, ainsi qu’un fort contraste entre les pleins et les déliés. Le contraste entre pleins et déliés et le détail des empattements ajouterait une plus-value à mes caractères. C’est en associant les caractéristiques des réales à mon idée d’origine que j’ai construis les premiers caractères de cette typographie. En se basant sur des fûts avec de léger  empattements, j’y ai ajouté la moitié d’un cœur associé à de belles courbes pour donner de l’élégance, garder la douceur et surtout mettre beaucoup d’amour dans mes caractères.`,
+        title: `Tech Specs`,
+        desc: `QR Code Recognition (Computer Vision, HCI)\n\nWe leveraged QR codes for robust and reliable tracking of panel blocks (PBs) in dynamic outdoor environments. Each PB is tagged with a unique QR code, allowing the HoloLens 2 to quickly and accurately identify and track individual blocks during installation. This approach ensures precise placement guidance, even under challenging lighting conditions and varying weather.\n\nSpatial Mapping and Anchoring\n\nWe developed a custom spatial mapping and anchoring system based on Azure services that allows the HoloLens 2 to create a detailed 3D map of the building façade. This enables the application to accurately position virtual PBs in relation to the real-world structure, ensuring that workers receive precise placement instructions.\n\nPrecise, Concise, and User-fridnely UX/UI Design\n\nWe utilized Microsoft’s Mixed Reality Toolkit (MRTK) to streamline development and implement best practices for user interaction and experience design. We developed a robust framework for building intuitive interfaces and interactions tailored to the HoloLens 2 platform. User can simply show/hide the menu system by raising/lowering their palms to interact with the AR system.`,
         side: 'right',
-      },
-      {
-        title: `POURQUOI WINTHERZ ?`,
-        desc: `Le nom de la typographie reflète le caractère que je lui ai transmis et expliqué à travers la note d’intention. “Wintherz” ressemble étrangement au mot anglais “winter” qui se traduit par l’hivers mais pourquoi remplacé le “er” par “herz” ? “Herz” se traduit de l’allemand qui signifie cœur en français et permet de faire un jeu de mot. Le mélange de l’anglais et de l’allemand représente le choix que j’ai au collège : choisir l’option allemand (et j’en suis fier !). Plus concrètement l’hivers est la période de l’année qui s’accorde le plus avec mes intentions. Celles de trouver de la chaleur à travers les moments gris et froid mais dans lesquels on peut y retrouver un rayon de chaleur. En hivers, ce rayon ce traduit par les fêtes de fin d’année, les les raclettes avec ses proches et plus simplement les rares rayons de soleil. Le mot cœur, quant à lui, se traduit par l’amour que l’on partage avec nos proches qui nous réchauffe en attendant le soleil de l’été.`,
-        side: 'left',
       },
     ],
     renderFinal: true,
     hrefButtonRenderFinal: '#',
-    typeRenderFinal: 'img',
-    imagePathRenderFinal: '/assets/projects/amour/amour-vignette.png',
+    typeRenderFinal: 'video',
+    videoPathRenderFinal: 'https://www.instagram.com/p/CMHdAjaj-6s/?igsh=Y2drZXo4OGJtN2px',
     renderFinalArray: false,
   },
   {
