@@ -12,6 +12,8 @@ import {
   PdfContainer,
 } from './RenderFinal.style'
 import { YouTubePreview } from '../YouTubePreview/YouTubePreview'
+// Dayong: 引入 Instagram 预览组件以支持外部嵌入
+import { InstagramPreview } from '../InstagramPreview/InstagramPreview'
 import { PdfViewer } from '../PdfViewer/PdfViewer'
 
 //Components
@@ -33,6 +35,8 @@ export const RenderFinal: FC<RenderFinalProps> = ({
   showTitle,
 }) => {
   const isYouTube = url ? /youtube.com|youtu.be/.test(url) : false
+  // Dayong: 简单识别 Instagram 分享链接
+  const isInstagram = url ? /instagram\.com\/p\//.test(url) : false
   // Dayong: detect inline PDF mode for render final
   const isPdf = type === 'pdf'
   // Dayong: re-use provided url when no explicit href is supplied
@@ -45,6 +49,10 @@ export const RenderFinal: FC<RenderFinalProps> = ({
         isYouTube ? (
           <VideoContainer>
             <YouTubePreview url={url as string} poster={videoPoster} />
+          </VideoContainer>
+        ) : isInstagram ? (
+          <VideoContainer>
+            <InstagramPreview url={url as string} />
           </VideoContainer>
         ) : (
           <VideoContainer>
