@@ -105,11 +105,23 @@ export const projects: Array<ProjectType> = [
         side: 'right',
       },
     ],
-    renderFinal: true,
+    renderFinal: false,
     hrefButtonRenderFinal: '#',
     typeRenderFinal: 'video',
     videoPathRenderFinal: 'https://www.instagram.com/p/CMHdAjaj-6s/?igsh=Y2drZXo4OGJtN2px',
-    renderFinalArray: false,
+    renderFinalArray: true,
+    renderFinalContent: [
+      [
+        'https://www.instagram.com/p/CMHdAjaj-6s/?igsh=Y2drZXo4OGJtN2px',
+        `/assets/projects/DiagramAR/gallary/add_equation.png`,
+        `/assets/projects/DiagramAR/gallary/menu.png`,
+      ],
+      [
+        `/assets/projects/DiagramAR/gallary/floor.png`,
+        `/assets/projects/DiagramAR/gallary/cup.png`,
+        `/assets/projects/DiagramAR/gallary/qr_code.png`,
+      ],
+    ],
   },
   {
     id: 2,
