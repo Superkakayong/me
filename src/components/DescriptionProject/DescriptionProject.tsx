@@ -17,17 +17,22 @@ import { colors } from '../../config/variables'
 
 //Icons
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import { Button } from '../Button/Button'
 
 type DescriptionProjectProps = {
   side: 'left' | 'right'
   children: string
   title: string
+  buttonText?: string
+  buttonUrl?: string
 }
 
 export const DescriptionProject: FC<DescriptionProjectProps> = ({
   side,
   children,
   title,
+  buttonText,
+  buttonUrl,
 }) => {
   const [hover, isHover] = useState<boolean>(false)
 
@@ -53,6 +58,11 @@ export const DescriptionProject: FC<DescriptionProjectProps> = ({
         >
           {children}
         </ChildrenDescriptionAbout>
+        {buttonText && buttonUrl && (
+          <div style={{ marginTop: '1rem' }}>
+            <Button text={buttonText} href={buttonUrl} size='md' active={true} />
+          </div>
+        )}
       </DescriptionProjectContainer>
     </SideContainer>
   )

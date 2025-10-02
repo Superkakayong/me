@@ -10,7 +10,7 @@ type GlobalButton = {
 }
 
 export const GlobalButton = styled.button<GlobalButton>`
-  font-family: ${fonts.OTR};
+  font-family: ${fonts.WorkSans};
   color: ${(props) =>
     props.active === true ? colors.secondary : colors.primary};
   font-size: ${(props) =>
@@ -19,7 +19,6 @@ export const GlobalButton = styled.button<GlobalButton>`
       : props.size === 'md'
       ? fontSize.md
       : fontSize.lg};
-  text-transform: uppercase;
   border: 1px solid ${colors.primary};
   border-radius: 15px;
   padding: 0.1em 1.1em;

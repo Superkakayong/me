@@ -96,13 +96,20 @@ export const projects: Array<ProjectType> = [
     description: [
       {
         title: `DiagramAR: What and Why?`,
-        desc: `As many students have experienced, trying to understand complex 3-dimensional diagrams displayed on a 2-dimensional textbook page can be quite confusing. DiagramAR solves this problem by efficiently converting 2D Matplotlib figures from lecture notes into immersive AR visualizations in real time. The user can move the figure in their surroundings and manipulate the values of the figure’s equations on their smart devices.`,
+        desc: `As many students have experienced, trying to understand complex 3-dimensional diagrams displayed on a 2-dimensional textbook page can be quite confusing. DiagramAR solves this problem by efficiently converting 2D Matplotlib figures from lecture notes into immersive AR visualizations in real time. The user can move the figure in their surroundings and manipulate the values of the figure’s equations on their smart devices.\n\nThis app was originally developed at Boston University to support teaching introductory linear algebra (by Prof. Mark Crovella). It currently supports visualizations for fundamental linear algebra concepts, such as vectors, lines, planes, and curved surfaces.`,
         side: 'left',
       },
       {
         title: `Tech Specs`,
-        desc: `QR Code Recognition (Computer Vision, HCI)\n\nWe leveraged QR codes for robust and reliable tracking of panel blocks (PBs) in dynamic outdoor environments. Each PB is tagged with a unique QR code, allowing the HoloLens 2 to quickly and accurately identify and track individual blocks during installation. This approach ensures precise placement guidance, even under challenging lighting conditions and varying weather.\n\nSpatial Mapping and Anchoring\n\nWe developed a custom spatial mapping and anchoring system based on Azure services that allows the HoloLens 2 to create a detailed 3D map of the building façade. This enables the application to accurately position virtual PBs in relation to the real-world structure, ensuring that workers receive precise placement instructions.\n\nPrecise, Concise, and User-fridnely UX/UI Design\n\nWe utilized Microsoft’s Mixed Reality Toolkit (MRTK) to streamline development and implement best practices for user interaction and experience design. We developed a robust framework for building intuitive interfaces and interactions tailored to the HoloLens 2 platform. User can simply show/hide the menu system by raising/lowering their palms to interact with the AR system.`,
+        desc: `QR Code Encoding\n\nWhen an instructor creates a 2D figure, the attributes of that figure are stored in a JSON file. This file can be delivered to the app via a menu system, or can be encoded in a QR code right next to the 2D figure in the lecture notes. For less complex figures with smaller JSON files, the app can obtain a JSON string that is encoded directly within the QR code, requiring no internet connection for the user.\n\nSeamless Integration Between Lectures and the App\n\nFigures can be made available on the DiagramAR app as automatic byproducts of the instructor’s preparation of the lecture notes. In this way, the AR figures are created with little additional work on both the students’ and the instructor's part.`,
         side: 'right',
+      },
+      {
+        title: ``,
+        desc: ``,
+        side: 'right',
+        buttonText: 'Download Android APK',
+        buttonUrl: 'https://drive.google.com/file/d/184JfUsO_A6i_wSrlWodvud2R0bm_0gHb/view?usp=share_link',
       },
     ],
     renderFinal: false,

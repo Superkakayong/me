@@ -2,6 +2,8 @@ type DescriptionType = {
   title: string
   desc: string
   side: 'left' | 'right'
+  buttonText?: string
+  buttonUrl?: string
 }
 
 export type ProjectType = {

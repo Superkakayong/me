@@ -119,11 +119,19 @@ export const OneProject = () => {
             <Credits text={projects[index].credits} />
           </CreditsContainer>
           <DescriptionContainer>
-            {projects[index].description.map(({ title, desc, side }) => (
-              <DescriptionProject key={uuid()} title={title} side={side}>
-                {desc}
-              </DescriptionProject>
-            ))}
+            {projects[index].description.map(
+              ({ title, desc, side, buttonText, buttonUrl }) => (
+                <DescriptionProject
+                  key={uuid()}
+                  title={title}
+                  side={side}
+                  buttonText={buttonText}
+                  buttonUrl={buttonUrl}
+                >
+                  {desc}
+                </DescriptionProject>
+              )
+            )}
           </DescriptionContainer>
           {renderRenduFinal()}
         </OneProjectContainer>

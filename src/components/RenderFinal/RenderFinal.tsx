@@ -94,7 +94,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
         // Dayong: surface explicit "open in new tab" control alongside inline viewer
         <Button
           style={{ marginTop: '1.5em' }}
-          text={'DOWNLOAD PDF'}
+          text={'Download PDF'}
           size={'md'}
           href={actionHref}
           active={true}
