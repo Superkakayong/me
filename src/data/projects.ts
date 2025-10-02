@@ -105,7 +105,7 @@ export const projects: Array<ProjectType> = [
         side: 'right',
       },
       {
-        title: ``,
+        title: `Try It Out!`,
         desc: ``,
         side: 'right',
         buttonText: 'Download Android APK',
