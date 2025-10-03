@@ -187,42 +187,45 @@ export const projects: Array<ProjectType> = [
     filter: 'ALL',
     imgAbout: '/assets/projects/XML/cover.png',
     client: [
-      `A Tool that can Automatically Convert`,
-      `Raw Scanned Point Cloud Data into`,
-      `Watertigiht 3D Meshes for 3D Printing`
+      `A Comparative Study on Performance of`,
+      `XML parser APIs (DOM and SAX) `,
+      `in Parsing Efficiency`
     ],
     role: [
-      `Skillset:`,
-      `Python, Open3D`,
-      `MeshLab, Blender`,
-      `3D Imaging, 3D Printing`,
+      `Roles:`,
+      `First Author`,
+      `Paper Presenter at University of Malaya, Kuala Lumpur, Malaysia`,
+      `Conference:`,
+      `The 3rd International Conference on Cryptography, Security and Privacy (ICCSP)`,
     ],
     credits: [
-      `Role:`,
-      `StartUp Tech Collaborator`,
+      // `Role:`,
+      // `StartUp Tech Collaborator`,
     ],
     description: [
       {
-        title: `Why Did I Create This Tool?`,
-        desc: `Our feet deserve better care when it comes to choosing shoes.\n\nIn most footwear brands, size is almost the only factor considered during selection. Yet our feet are far more complex, and this “one-size-fits-all” approach often leads to discomfort and even long-term health issues.\n\nTo address this, I collaborated with Fitasy, a technology startup founded by MIT engineers that leverages spatial AI and 3D printing to create custom-fit footwear, to develop an automated middleware that can transform raw scanned foot scans into watertight 3D meshes (e.g., STL files), which can be directly used for 3D printing and manufacturing.\n\nThis lightweight (<100MB) tool plays a critical role in the workflow. With it, users can quickly generate a 3D-printable mesh simply by feeding in point cloud data containing xyz coordinates from a foot scan.`,
+        title: `Abstract`,
+        desc: `As a semi-structure language, XML is widely used in converting unstructured data to structured data due to its simplicity, extendibility and interoperability. There are numerous XML parser APIs that perform the same function of parsing XML document. This paper compares the performance between two famous XML parser APIs, DOM and SAX, in terms of speed, memory consumption and modifiability in parsing process. This experiment concluded that DOM API takes more time, more memory with higher level of modifiability while SAX API takes less time, less memory with lower level of modifiability.  `,
         side: 'left',
+        buttonText: 'View on ACM Digital Library',
+        buttonUrl: 'https://dl.acm.org/doi/10.1145/3309074.3309124',
       },
-      {
-        title: `Tech Specs`,
-        desc: `ICP (Iterative Closest Point) Alignment\n\nThe input point clouds might contain multiple partial scans of a foot (bottom, top, sides, etc), which need to be aligned into a single coordinate system. I implemented the ICP algorithm to iteratively refine the alignment by minimizing the distance between corresponding points in overlapping regions. This step ensures that fragmented point clouds are seamlessly combined into a complete, anatomically accurate foot geometry\n\nPoisson Surface Reconstruction\n\nTo convert the aligned point cloud into a watertight mesh, we employed Poisson surface reconstruction. This method estimates a smooth surface that best fits the input points while ensuring that the resulting mesh is closed and free of holes.\n\nMesh Post-Processing\n\nAfter generating the initial mesh, we applied several post-processing steps to enhance its quality. This includes mesh simplification to reduce polygon count while preserving detail, smoothing to eliminate noise, and hole filling to ensure the mesh is watertight and ready for 3D printing.`,
-        side: 'right',
-      },
+      // {
+      //   title: `Tech Specs`,
+      //   desc: `ICP (Iterative Closest Point) Alignment\n\nThe input point clouds might contain multiple partial scans of a foot (bottom, top, sides, etc), which need to be aligned into a single coordinate system. I implemented the ICP algorithm to iteratively refine the alignment by minimizing the distance between corresponding points in overlapping regions. This step ensures that fragmented point clouds are seamlessly combined into a complete, anatomically accurate foot geometry\n\nPoisson Surface Reconstruction\n\nTo convert the aligned point cloud into a watertight mesh, we employed Poisson surface reconstruction. This method estimates a smooth surface that best fits the input points while ensuring that the resulting mesh is closed and free of holes.\n\nMesh Post-Processing\n\nAfter generating the initial mesh, we applied several post-processing steps to enhance its quality. This includes mesh simplification to reduce polygon count while preserving detail, smoothing to eliminate noise, and hole filling to ensure the mesh is watertight and ready for 3D printing.`,
+      //   side: 'right',
+      // },
     ],
     renderFinal: true,
     // Dayong: use inline PDF preview for project deliverable
     hrefButtonRenderFinal: 'https://dl.acm.org/doi/10.1145/3309074.3309124',
     typeRenderFinal: 'pdf',
     documentPathRenderFinal: '/assets/projects/XML/paper.pdf',
-    documentButtonText: 'View in ACM Digital Library',
+    documentButtonText: 'View on ACM Digital Library',
     renderFinalArray: true,
     renderFinalContent: [
       [
-        `/assets/projects/MeshGeneration/icp.png`,
+        // `/assets/projects/MeshGeneration/icp.png`,
       ],
     ],
   },

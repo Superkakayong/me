@@ -57,7 +57,7 @@ export const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
         }
       } catch (err) {
         if (!cancelled) {
-          setError('Impossible de charger le PDF.')
+          setError('Failed to Load the File.')
         }
       } finally {
         if (loadingTask) {
