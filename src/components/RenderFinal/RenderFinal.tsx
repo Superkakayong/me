@@ -25,6 +25,7 @@ type RenderFinalProps = {
   hrefButton: string | undefined
   videoPoster?: string | undefined // Dayong: optional poster image for video
   showTitle?: boolean
+  documentButtonText?: string
 }
 
 export const RenderFinal: FC<RenderFinalProps> = ({
@@ -33,6 +34,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
   hrefButton,
   videoPoster,
   showTitle,
+  documentButtonText,
 }) => {
   const isYouTube = url ? /youtube.com|youtu.be/.test(url) : false
   // Dayong: 简单识别 Instagram 分享链接
@@ -71,7 +73,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
             // Dayong: fallback button when no inline document source is provided
             <Button
               style={{ marginTop: '1.5em' }}
-              text={'OPEN PDF'}
+              text={documentButtonText ?? 'Open Document'}
               size={'md'}
               href={actionHref}
               active={true}
@@ -94,7 +96,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
         // Dayong: surface explicit "open in new tab" control alongside inline viewer
         <Button
           style={{ marginTop: '1.5em' }}
-          text={'Download PDF'}
+          text={documentButtonText ?? 'Download PDF'}
           size={'md'}
           href={actionHref}
           active={true}

@@ -47,6 +47,7 @@ export const OneProject = () => {
             hrefButton={projects[index].hrefButtonRenderFinal}
             videoPoster={projects[index].videoPoster}
             showTitle={true}
+            documentButtonText={projects[index].documentButtonText}
           />{' '}
           <RenduFinalArray
             renduFinalContent={projects[index].renderFinalContent}
@@ -69,6 +70,7 @@ export const OneProject = () => {
           hrefButton={projects[index].hrefButtonRenderFinal}
             videoPoster={projects[index].videoPoster}
           showTitle={true}
+          documentButtonText={projects[index].documentButtonText}
         />
       )
     } else if (!projects[index].renderFinal && projects[index].renderFinalArray) {

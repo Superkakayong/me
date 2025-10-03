@@ -27,6 +27,8 @@ export type ProjectType = {
   videoPoster?: string
   // Dayong: optional PDF/document path for inline viewer
   documentPathRenderFinal?: string
+  // Dayong: optional custom text for document download button
+  documentButtonText?: string
   renderFinalArray: boolean
   renderFinalContent?: Array<Array<string>>
 }
