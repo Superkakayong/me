@@ -252,7 +252,7 @@ export const projects: Array<ProjectType> = [
     ],
     description: [
       {
-        title: `Background Story of Sahara's Miracle`,
+        title: `Background Story`,
         desc: `In the near future, artificial intelligence has reached unprecedented heights, yet human life continues to decline. Out of necessity, a city was built in the vast Sahara Desert, a towering cyberpunk fortress known as Sahara’s Miracle. Its skyline is guarded by colossal ULTRA warriors, while a radiant bridge reminiscent of Norse legend forms the city’s heart, flanked by fighter jets ready to defend its people.\n\nThe city appears indestructible, a monument to technology and survival. But when night falls, beneath the glowing arches and shadowed corridors, the true human stories -  fragile, hidden, and enduring - emerge.`,
         side: 'left',
       },
