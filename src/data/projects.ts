@@ -285,32 +285,68 @@ export const projects: Array<ProjectType> = [
   },
   {
     id: 5,
-    title: `AMNESIE - DAMSO`,
-    imgPath: '/assets/projects/amnesie/amnesie-vignette.png',
-    mainsTag: ['MIXED REALITY'],
-    secondsTags: ['DESIGN GENERATIF'],
+    title: `Yong Bro - Educational Content Creator`,
+    imgPath: '/assets/projects/Yong/thumbnail.png',
+    mainsTag: ['Social Media', 'Educational'],
+    secondsTags: ['Social Media'],
     filter: 'ALL',
-    imgAbout: '/assets/projects/amnesie/amnesie-vignette.png',
-    client: [`CLIENTS :`, `UNDEFINED`],
-    role: [`ROLE :`, `UNDEFINED`],
-    credits: [`CREDITS :`, `UNDEFINED`],
+    imgAbout: '/assets/projects/RetrofitAR/cover.png',
+    client: [
+      `An Industrial-Level`,
+      `Mixed Reality Application`,
+      `For the Construction Industry`
+    ],
+    role: [
+      `Skillset:`,
+      `Unity3D, C#`,
+      `Computer Vision`,
+      `Spatial Computing`,
+      `Mixed Reality Toolkit (MRTK)`,
+      `Human Computer Interaction (HCI)`,
+    ],
+    credits: [
+      `Roles:`,
+      `Lead Developer`,
+      `Co-lead UX/UI Designer`,
+      `Team:`,
+      `Fraunhofer CMI Energy Team (10+ people)`,
+      `Funder:`,
+      `Department of Energy (DOE)`
+    ],
     description: [
       {
-        title: `UNDEFINED`,
-        desc: `UNDEFINED`,
+        title: `RetrofitAR: What and Why?`,
+        desc: `The U.S. has roughly 160–170 million people living in houses, with 70% residing in single-family homes—the primary target for exterior retrofits. Yet today, deep wall retrofits remain costly, error-prone, and heavily labor-intensive, slowing the nation’s progress toward energy-efficient housing.\n\nTo address this, we developed RetrofitAR, an Augmented Reality application for Microsoft HoloLens 2 that redefines how workers with limited training install prefabricated insulation panel blocks (PBs) and trim. Instead of relying on traditional paper instructions, semi-skilled workers receive real-time, visual guidance that shows exactly which PB to select from the pallet and precisely where to place it on the façade—turning a complex process into an intuitive, step-by-step workflow.\n\nBacked by over $6 million in funding from the U.S. Department of Energy (DOE), field demonstrations proved RetrofitAR’s transformative impact: two semi-skilled workers installed a full 10’×20’ wall section outdoors in just 14 minutes, compared with 3.5 hours using traditional methods—a 15× increase in speed. Scaled to a full house, this translates to completing deep retrofits in under 3 days by a two-person crew, at costs below $6/ft². RetrofitAR has been piloted in Massachusetts homes and will undergo further testing in cold-climate states including Pennsylvania, New Hampshire, and Vermont.`,
         side: 'left',
       },
       {
-        title: `UNDEFINED`,
-        desc: `UNDEFINED`,
+        title: `Tech Specs`,
+        desc: `QR Code Recognition (Computer Vision, HCI)\n\nWe leveraged QR codes for robust and reliable tracking of panel blocks (PBs) in dynamic outdoor environments. Each PB is tagged with a unique QR code, allowing the HoloLens 2 to quickly and accurately identify and track individual blocks during installation. This approach ensures precise placement guidance, even under challenging lighting conditions and varying weather.\n\nSpatial Mapping and Anchoring\n\nWe developed a custom spatial mapping and anchoring system based on Azure services that allows the HoloLens 2 to create a detailed 3D map of the building façade. This enables the application to accurately position virtual PBs in relation to the real-world structure, ensuring that workers receive precise placement instructions.\n\nPrecise, Concise, and User-fridnely UX/UI Design\n\nWe utilized Microsoft’s Mixed Reality Toolkit (MRTK) to streamline development and implement best practices for user interaction and experience design. We developed a robust framework for building intuitive interfaces and interactions tailored to the HoloLens 2 platform. User can simply show/hide the menu system by raising/lowering their palms to interact with the AR system.`,
         side: 'right',
       },
+      // {
+      //   title: `POST-PRODUCTION`,
+      //   desc: `Une fois l’animation de chaque scène terminée, on passe au montage, il faut assembler toutes les scènes pour en faire une vidéo. C’est aussi l’étape de tous les réglages, on accorde les violons, toutes les scènes doivent s’enchaîner comme prévu dans le scénario. C’est à cette étape que l’on rajoute la partie audio, le sound design qui va venir habillé de manière auditive la vidéo.`,
+      //   side: 'left',
+      // },
     ],
     renderFinal: true,
     hrefButtonRenderFinal: '#',
-    typeRenderFinal: 'img',
-    imagePathRenderFinal: '/assets/projects/amnesie/amnesie-vignette.png',
-    renderFinalArray: false,
+    videoPathRenderFinal: `https://www.youtube.com/watch?v=zx91N345Wzc`,
+    // Dayong: Optional poster image for the video (use an existing image or add a dedicated poster)
+    videoPoster: '/assets/projects/RetrofitAR/shed/shed.jpg',
+    typeRenderFinal: 'video',
+    renderFinalArray: true,
+    renderFinalContent: [
+      [
+        `https://youtu.be/qhf9uMGCIiI`,
+        `/assets/projects/RetrofitAR/ui/magicball.jpg`,
+      ],
+      [
+        `/assets/projects/RetrofitAR/ui/flowchart.png`,
+        `/assets/projects/RetrofitAR/ui/lsa.png`,
+      ],
+    ],
   },
   {
     id: 6,
