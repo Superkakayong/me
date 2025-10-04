@@ -11,7 +11,6 @@ import {
 } from './Navbar.style'
 
 //Components
-import { Button } from '../Button/Button'
 import { ResponsiveMenu } from '../ResponsiveMenu/ResponsiveMenu'
 
 //Icons
@@ -27,19 +26,11 @@ export const Navbar = () => {
   const { toggleMenu, active } = useResponsiveMenu()
   const location = useLocation()
 
-  let responsiveButton = {}
   let responsiveMenuBar = {}
 
   if (window.matchMedia('(max-width: 576px)').matches) {
-    responsiveButton = {}
     responsiveMenuBar = { zIndex: 50 }
   } else {
-    responsiveButton = {
-      position: 'absolute',
-      top: '50%',
-      right: '6%',
-      transform: 'translate(-6%, -50%)',
-    }
     responsiveMenuBar = { display: 'none' }
   }
 
@@ -72,14 +63,7 @@ export const Navbar = () => {
             </Link>
           </PseudoElement>
         </LinksContainer>
-        <Link to='/contact'>
-          <Button
-            text={`CONTACT`}
-            size={'md'}
-            href='/contact'
-            style={responsiveButton}
-          />
-        </Link>
+        {/* Dayong: Contact button removed */}
       </NavbarContainer>
     </>
   )

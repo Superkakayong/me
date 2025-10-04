@@ -57,7 +57,7 @@ export const ScrollHint = styled.span`
   background: rgba(33, 33, 33, 0.75);
   color: ${colors.secondary};
   font-family: ${fonts.OTR};
-  font-size: ${fontSize.md};
+  font-size: ${fontSize.lg};
   letter-spacing: 1px;
   text-transform: uppercase;
   pointer-events: none;

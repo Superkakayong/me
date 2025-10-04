@@ -47,6 +47,7 @@ export const OneProject = () => {
             hrefButton={projects[index].hrefButtonRenderFinal}
             videoPoster={projects[index].videoPoster}
             showTitle={true}
+            documentButtonText={projects[index].documentButtonText}
           />{' '}
           <RenduFinalArray
             renduFinalContent={projects[index].renderFinalContent}
@@ -69,6 +70,7 @@ export const OneProject = () => {
           hrefButton={projects[index].hrefButtonRenderFinal}
             videoPoster={projects[index].videoPoster}
           showTitle={true}
+          documentButtonText={projects[index].documentButtonText}
         />
       )
     } else if (!projects[index].renderFinal && projects[index].renderFinalArray) {
@@ -119,11 +121,19 @@ export const OneProject = () => {
             <Credits text={projects[index].credits} />
           </CreditsContainer>
           <DescriptionContainer>
-            {projects[index].description.map(({ title, desc, side }) => (
-              <DescriptionProject key={uuid()} title={title} side={side}>
-                {desc}
-              </DescriptionProject>
-            ))}
+            {projects[index].description.map(
+              ({ title, desc, side, buttonText, buttonUrl }) => (
+                <DescriptionProject
+                  key={uuid()}
+                  title={title}
+                  side={side}
+                  buttonText={buttonText}
+                  buttonUrl={buttonUrl}
+                >
+                  {desc}
+                </DescriptionProject>
+              )
+            )}
           </DescriptionContainer>
           {renderRenduFinal()}
         </OneProjectContainer>

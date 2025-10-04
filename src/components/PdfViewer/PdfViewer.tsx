@@ -14,6 +14,7 @@ export const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
   const [pages, setPages] = useState<Array<string>>([])
   const [showHint, setShowHint] = useState(false)
   const containerRef = useRef<HTMLDivElement | null>(null)
+  const dprRef = useRef(typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1)
 
   // Dayong: load PDF via pdf.js and convert pages to images for wide browser support
   useEffect(() => {
@@ -33,7 +34,7 @@ export const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
 
         for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
           const page = await pdf.getPage(pageNumber)
-          const viewport = page.getViewport({ scale: 1.2 })
+          const viewport = page.getViewport({ scale: 1.2 * dprRef.current })
           const canvas = document.createElement('canvas')
           const context = canvas.getContext('2d')
 
@@ -47,7 +48,7 @@ export const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
           await page.render({ canvasContext: context, viewport }).promise
 
           if (!cancelled) {
-            renderedPages.push(canvas.toDataURL('image/png'))
+            renderedPages.push(canvas.toDataURL('image/png', 0.92))
           }
         }
 
@@ -56,7 +57,7 @@ export const PdfViewer: React.FC<{ file: string }> = ({ file }) => {
         }
       } catch (err) {
         if (!cancelled) {
-          setError('Impossible de charger le PDF.')
+          setError('Failed to Load the File.')
         }
       } finally {
         if (loadingTask) {

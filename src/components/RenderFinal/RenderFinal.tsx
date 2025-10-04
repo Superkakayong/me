@@ -12,6 +12,8 @@ import {
   PdfContainer,
 } from './RenderFinal.style'
 import { YouTubePreview } from '../YouTubePreview/YouTubePreview'
+// Dayong: 引入 Instagram 预览组件以支持外部嵌入
+import { InstagramPreview } from '../InstagramPreview/InstagramPreview'
 import { PdfViewer } from '../PdfViewer/PdfViewer'
 
 //Components
@@ -23,6 +25,7 @@ type RenderFinalProps = {
   hrefButton: string | undefined
   videoPoster?: string | undefined // Dayong: optional poster image for video
   showTitle?: boolean
+  documentButtonText?: string
 }
 
 export const RenderFinal: FC<RenderFinalProps> = ({
@@ -31,8 +34,11 @@ export const RenderFinal: FC<RenderFinalProps> = ({
   hrefButton,
   videoPoster,
   showTitle,
+  documentButtonText,
 }) => {
   const isYouTube = url ? /youtube.com|youtu.be/.test(url) : false
+  // Dayong: 简单识别 Instagram 分享链接
+  const isInstagram = url ? /instagram\.com\/p\//.test(url) : false
   // Dayong: detect inline PDF mode for render final
   const isPdf = type === 'pdf'
   // Dayong: re-use provided url when no explicit href is supplied
@@ -45,6 +51,10 @@ export const RenderFinal: FC<RenderFinalProps> = ({
         isYouTube ? (
           <VideoContainer>
             <YouTubePreview url={url as string} poster={videoPoster} />
+          </VideoContainer>
+        ) : isInstagram ? (
+          <VideoContainer>
+            <InstagramPreview url={url as string} />
           </VideoContainer>
         ) : (
           <VideoContainer>
@@ -63,7 +73,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
             // Dayong: fallback button when no inline document source is provided
             <Button
               style={{ marginTop: '1.5em' }}
-              text={'OPEN PDF'}
+              text={documentButtonText ?? 'Open Document'}
               size={'md'}
               href={actionHref}
               active={true}
@@ -86,7 +96,7 @@ export const RenderFinal: FC<RenderFinalProps> = ({
         // Dayong: surface explicit "open in new tab" control alongside inline viewer
         <Button
           style={{ marginTop: '1.5em' }}
-          text={'DOWNLOAD PDF'}
+          text={documentButtonText ?? 'Download PDF'}
           size={'md'}
           href={actionHref}
           active={true}

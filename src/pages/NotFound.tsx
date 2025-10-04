@@ -16,8 +16,8 @@ export const NotFound = () => {
     <NotFoundContainer>
       <TextContainer>
         <NotFoundText>OH.</NotFoundText>
-        <NotFoundText>LA PAGE</NotFoundText>
-        <NotFoundText>N{`'`}EXISTE PAS</NotFoundText>
+        <NotFoundText>THE PAGE</NotFoundText>
+        <NotFoundText>N{`'`}DOES NOT EXIST</NotFoundText>
         <StickersNotFound />
       </TextContainer>
     </NotFoundContainer>
