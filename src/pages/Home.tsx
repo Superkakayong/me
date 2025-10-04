@@ -34,7 +34,7 @@ export const Home = () => {
       <PageTransition>
         <HomeContainer>
           <Stickers />
-          <DrawingArrow src={drawingArrow} />
+          {/* <DrawingArrow src={drawingArrow} /> */}
           <TextContainer>
             <Name>Dayong Wu</Name>
             <TypeText />
