@@ -74,7 +74,7 @@ export const Contact = () => {
               <Input
                 clear={clear}
                 type={'text'}
-                placeholder={'NOM'}
+                placeholder={'NAME'}
                 name={'nom'}
                 autocomplete={false}
               />
@@ -94,7 +94,7 @@ export const Contact = () => {
               <Input
                 clear={clear}
                 type={'text'}
-                placeholder={'OBJET'}
+                placeholder={'SUBJECT'}
                 name={'objet'}
                 autocomplete={false}
               />
@@ -103,7 +103,7 @@ export const Contact = () => {
               <Input
                 clear={clear}
                 type={'text'}
-                placeholder={'TELEPHONE'}
+                placeholder={'PHONE'}
                 name={'telephone'}
                 autocomplete={false}
               />
@@ -111,7 +111,7 @@ export const Contact = () => {
           </InputContainerInline>
           <TextArea placeholder={'MESSAGE'} name={'message'} clear={clear} />
           <SubmitContainer>
-            <Button>ENVOYER</Button>
+            <Button>SEND</Button>
           </SubmitContainer>
         </LeftContainer>
         <RightContainer>
