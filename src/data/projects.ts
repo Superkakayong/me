@@ -192,7 +192,7 @@ export const projects: Array<ProjectType> = [
       `in Parsing Efficiency`
     ],
     role: [
-      `Roles:`,
+      `Role:`,
       `First Author`,
       `Paper Presenter at University of Malaya, Kuala Lumpur, Malaysia`,
       `Conference:`,
@@ -231,6 +231,60 @@ export const projects: Array<ProjectType> = [
   },
   {
     id: 4,
+    title: `RumourClock: Visual Representation of Online Romour Spreading`,
+    imgPath: '/assets/projects/Rumour/thumbnail.png',
+    mainsTag: ['Publications', 'Visual Sociology'],
+    secondsTags: ['Publications',],
+    filter: 'ALL',
+    imgAbout: '/assets/projects/Rumour/cover.png',
+    client: [
+      `RumourClock: `,
+      `A Breakthrough in Visualizing`,
+      `Online Rumors and misinformation Spreading`,
+    ],
+    role: [
+      `Role:`,
+      `First Author`,
+      `Conference:`,
+      `The 2nd International Conference on Future Smart Cities`,
+      `Springer Nature:`,
+      `Resilient and Responsible Smart Cities 2021 Volume 1`,
+    ],
+    credits: [
+      // `Role:`,
+      // `StartUp Tech Collaborator`,
+    ],
+    description: [
+      {
+        title: `RumourClock: What and Why?`,
+        desc: `In today’s hyper-connected world, misinformation spreads as fast — or faster — than verified facts. Platforms like Facebook, Twitter, and Instagram face mounting challenges to identify and contain online rumors that fuel social unrest, health misinformation, or political polarization.\n\nWe proposed RumourClock, an advanced visual analytics system designed to represent the scale, pace, and dynamics of online rumor propagation.\n\nRumorClock is a time-aware, scalable visualization model that tracks and compares online rumor spread across large social networks. Unlike traditional tools that rely on static text or simplified graphs, RumorClock offers a dynamic, multi-dimensional lens to understand how rumors evolve.`,
+        side: 'left',
+        // buttonText: 'View on ACM Digital Library',
+        // buttonUrl: 'https://dl.acm.org/doi/10.1145/3309074.3309124',
+      },
+      {
+        title: `Highlights of RumourClock`,
+        desc: `Scalable Rumor Representation: Capable of handling massive data from multiple rumor sources across extended timeframes.\n\nTemporal Comparison: Visualizes how different rumors surge, fade, or intersect over time, helping researchers and platforms pinpoint “viral windows.”\n\nInsight-Driven Visualization: Offers more than just graphics — delivers actionable intelligence for public policy, social media governance, and digital journalism.`,
+        side: 'right',
+        buttonText: 'View on Springer Nature',
+        buttonUrl: 'https://link.springer.com/chapter/10.1007/978-3-030-63567-1_9',
+      },
+    ],
+    renderFinal: true,
+    // Dayong: use inline PDF preview for project deliverable
+    hrefButtonRenderFinal: 'https://link.springer.com/chapter/10.1007/978-3-030-63567-1_9',
+    typeRenderFinal: 'pdf',
+    documentPathRenderFinal: '/assets/projects/Rumour/paper.pdf',
+    documentButtonText: 'View on Springer Nature',
+    renderFinalArray: true,
+    renderFinalContent: [
+      [
+        // `/assets/projects/MeshGeneration/icp.png`,
+      ],
+    ],
+  },
+  {
+    id: 5,
     title: `Sahara's Miracle - A Cyberpunk City Built with Maya`,
     imgPath: '/assets/projects/Sahara/thumbnail.png',
     mainsTag: ['3D', 'Maya'],
@@ -284,7 +338,7 @@ export const projects: Array<ProjectType> = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: `Yong Bro - Educational Content Creator`,
     imgPath: '/assets/projects/Yong/thumbnail.png',
     mainsTag: ['Social Media', 'Educational'],
