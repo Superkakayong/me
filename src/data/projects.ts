@@ -188,7 +188,7 @@ export const projects: Array<ProjectType> = [
     imgAbout: '/assets/projects/XML/cover.png',
     client: [
       `A Comparative Study on Performance of`,
-      `XML parser APIs (DOM and SAX) `,
+      `XML Parser APIs (DOM and SAX) `,
       `in Parsing Efficiency`
     ],
     role: [
