@@ -42,7 +42,6 @@ export const TextContainer = styled.div`
 export const Text = styled.h1`
   font-family: ${fonts.OTR};
   color: ${colors.primary};
-  text-transform: uppercase;
   font-size: ${bigLetters.lg};
   font-weight: normal;
   letter-spacing: 8px;
@@ -60,7 +59,6 @@ export const Text = styled.h1`
 export const Name = styled(Text)`
   /* example overrides: change color and remove uppercase */
   color: ${colors.name};
-  text-transform: none;
   /* if you want a different font, set it here:
      font-family: 'YourFontName', ${fonts.WorkSans};
   */
@@ -113,7 +111,6 @@ export const HardSkillsContainer = styled.div`
 export const HardSkillsTitle = styled.h3`
   font-family: ${fonts.OTR};
   color: ${colors.primary};
-  text-transform: uppercase;
   font-size: ${fontSize.xxl};
   font-weight: normal;
   letter-spacing: 8px;

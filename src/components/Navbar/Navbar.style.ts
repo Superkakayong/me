@@ -54,7 +54,6 @@ export const PseudoElement = styled.div<PseudoElement>`
 
 export const NavbarLinks = styled.span`
   color: ${colors.primary};
-  text-transform: uppercase;
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   cursor: pointer;

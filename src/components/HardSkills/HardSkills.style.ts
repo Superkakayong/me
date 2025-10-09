@@ -27,7 +27,6 @@ export const Skills = styled.div`
 export const SkillsText = styled.p`
   font-family: ${fonts.OTR};
   color: ${colors.primary};
-  text-transform: uppercase;
   font-size: ${fontSize.md};
   padding: 0.2em 0.6em;
   background-color: ${colors.secondary};

@@ -26,7 +26,7 @@ export const TypeText = () => {
       style={{
         fontFamily: fonts.OTR,
         color: colors.primary,
-        textTransform: 'uppercase',
+        // textTransform: 'uppercase',
         fontSize: size,
         fontWeight: 'normal',
         letterSpacing: '8px',

@@ -9,24 +9,24 @@ export const useFilter = () => {
   }
 
   const setFilterMR = () => {
-    setFilter('MIXED REALITY')
+    setFilter('HCI')
   }
 
   const setFilterGD = () => {
-    setFilter('GRAPHIC DESIGN')
+    setFilter('3D Modeling')
   }
 
   const setFilterUX = () => {
-    setFilter('UX UI DESIGN')
+    setFilter('Publications')
   }
 
   const setFilterVE = () => {
-    setFilter('VIDEO EDITING')
+    setFilter('Social Media')
   }
 
-  const setFilter3D = () => {
-    setFilter('3D')
-  }
+  // const setFilter3D = () => {
+  //   setFilter('3D')
+  // }
 
   return {
     filter,
@@ -35,7 +35,7 @@ export const useFilter = () => {
     setFilterGD,
     setFilterUX,
     setFilterVE,
-    setFilter3D,
+    // setFilter3D,
     setFilter,
   }
 }

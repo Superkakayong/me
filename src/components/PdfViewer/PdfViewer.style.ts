@@ -33,7 +33,6 @@ export const LoadingText = styled.span`
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   color: ${colors.primary};
-  text-transform: uppercase;
   letter-spacing: 1px;
 `
 
@@ -59,7 +58,6 @@ export const ScrollHint = styled.span`
   font-family: ${fonts.OTR};
   font-size: ${fontSize.lg};
   letter-spacing: 1px;
-  text-transform: uppercase;
   pointer-events: none;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 

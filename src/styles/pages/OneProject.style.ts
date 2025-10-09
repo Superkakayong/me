@@ -32,7 +32,6 @@ export const NavText = styled.p`
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   color: ${colors.primary};
-  text-transform: uppercase;
 
   @media ${mediaSize.phone} {
     font-size: ${fontSize.xs};

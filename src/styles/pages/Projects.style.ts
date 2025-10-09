@@ -49,7 +49,6 @@ export const NoProject = styled.p`
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   color: ${colors.primary};
-  text-transform: uppercase;
   width: 30em;
 
   @media ${mediaSize.phone} {

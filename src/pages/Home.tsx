@@ -59,7 +59,7 @@ export const Home = () => {
           </ArrowContainer>
         </HomeContainer>
         <HardSkillsContainer>
-          <HardSkillsTitle>HARD SKILLS</HardSkillsTitle>
+          <HardSkillsTitle>SKILL SET</HardSkillsTitle>
           <HardSkills />
         </HardSkillsContainer>
       </PageTransition>

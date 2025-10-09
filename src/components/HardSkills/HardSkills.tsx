@@ -16,19 +16,19 @@ export const HardSkills = () => {
   const navigate = useNavigate()
 
   const handleClickMotionDesign = () => {
-    navigate('/projects?filter=MIXED REALITY')
+    navigate('/projects?filter=HCI')
   }
 
   const handleClickGraphicDesign = () => {
-    navigate('/projects?filter=GD')
+    navigate('/projects?filter=3D Modeling')
   }
 
   const handleClickUXUI = () => {
-    navigate('/projects?filter=UXUI')
+    navigate('/projects?filter=Publications')
   }
 
   const handleClickVideoEditing = () => {
-    navigate('/projects?filter=VE')
+    navigate('/projects?filter=Social Media')
   }
 
   const handleClick3D = () => {
@@ -44,7 +44,7 @@ export const HardSkills = () => {
           alt='Logo compétence'
           onClick={handleClickMotionDesign}
         />
-        <SkillsText>MIXED REALITY</SkillsText>
+        <SkillsText>HCI</SkillsText>
       </Skills>
       <Skills>
         <Img
@@ -53,7 +53,7 @@ export const HardSkills = () => {
           alt='Logo compétence'
           onClick={handleClickGraphicDesign}
         />
-        <SkillsText>GRAPHIC DESIGN</SkillsText>
+        <SkillsText>3D Modeling</SkillsText>
       </Skills>
       <Skills>
         <Img
@@ -62,7 +62,7 @@ export const HardSkills = () => {
           alt='Logo compétence'
           onClick={handleClickUXUI}
         />
-        <SkillsText>UX UI DESIGN</SkillsText>
+        <SkillsText>Publications</SkillsText>
       </Skills>
       <Skills>
         <Img
@@ -71,9 +71,9 @@ export const HardSkills = () => {
           alt='Logo compétence'
           onClick={handleClickVideoEditing}
         />
-        <SkillsText>VIDEO EDITING</SkillsText>
+        <SkillsText>Social Media</SkillsText>
       </Skills>
-      <Skills>
+      {/* <Skills>
         <Img
           loading='lazy'
           src={Fichiers3d}
@@ -81,7 +81,7 @@ export const HardSkills = () => {
           onClick={handleClick3D}
         />
         <SkillsText>3D</SkillsText>
-      </Skills>
+      </Skills> */}
     </SkillsContainer>
   )
 }

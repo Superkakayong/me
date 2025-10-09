@@ -134,8 +134,8 @@ export const projects: Array<ProjectType> = [
     id: 2,
     title: `Auto-3D Mesh Generation`,
     imgPath: '/assets/projects/MeshGeneration/thumbnail.png',
-    mainsTag: ['3D Printing', 'Mesh'],
-    secondsTags: ['3D',],
+    mainsTag: ['3D Modeling', 'Mesh'],
+    secondsTags: ['3D Modeling',],
     filter: 'ALL',
     imgAbout: '/assets/projects/MeshGeneration/cover.png',
     client: [
@@ -287,8 +287,8 @@ export const projects: Array<ProjectType> = [
     id: 5,
     title: `Sahara's Miracle - A Cyberpunk City Built with Maya`,
     imgPath: '/assets/projects/Sahara/thumbnail.png',
-    mainsTag: ['3D', 'Maya'],
-    secondsTags: ['3D'],
+    mainsTag: ['3D Modeling', 'Maya'],
+    secondsTags: ['3D Modeling'],
     filter: 'ALL',
     imgAbout: '/assets/projects/Sahara/cover.png',
     client: [

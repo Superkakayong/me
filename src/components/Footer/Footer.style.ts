@@ -30,7 +30,6 @@ export const ContentContainer = styled.div`
 
 export const GoTop = styled.button`
   color: ${colors.primary};
-  text-transform: uppercase;
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   cursor: pointer;
@@ -62,7 +61,6 @@ export const LinksContainer = styled.div`
 
 export const Links = styled.a`
   color: ${colors.primary};
-  text-transform: uppercase;
   font-family: ${fonts.OTR};
   font-size: ${fontSize.md};
   cursor: pointer;
@@ -82,7 +80,6 @@ export const Credits = styled.p`
   font-family: ${fonts.WorkSans};
   font-size: ${fontSize.s};
   letter-spacing: 2px;
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;

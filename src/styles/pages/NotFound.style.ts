@@ -25,7 +25,6 @@ export const NotFoundText = styled.h3`
   font-family: ${fonts.OTR};
   color: ${colors.primary};
   font-size: ${bigLetters.xl};
-  text-transform: uppercase;
 
   @media ${mediaSize.phone} {
     font-size: ${bigLetters.xs};

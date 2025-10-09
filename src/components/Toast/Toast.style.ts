@@ -46,7 +46,6 @@ export const TitleType = styled.h5<TitleType>`
     props.type === 'success' ? colors.success : colors.error};
   font-family: ${fonts.WorkSans};
   font-size: ${fontSize.md};
-  text-transform: uppercase;
 `
 
 export const Message = styled.p<Message>`
@@ -54,5 +53,4 @@ export const Message = styled.p<Message>`
     props.type === 'success' ? colors.success : colors.error};
   font-family: ${fonts.WorkSans};
   font-size: ${fontSize.xs};
-  text-transform: uppercase;
 `

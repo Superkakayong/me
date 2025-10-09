@@ -30,7 +30,7 @@ export const Projects = () => {
     setFilterGD,
     setFilterUX,
     setFilterVE,
-    setFilter3D,
+    // setFilter3D,
   } = useFilter()
 
   const [searchParams] = useSearchParams()
@@ -46,16 +46,16 @@ export const Projects = () => {
   }
 
   useEffect(() => {
-    if (searchParams.get('filter') === 'MIXED REALITY') {
+    if (searchParams.get('filter') === 'HCI') {
       setFilterMR()
-    } else if (searchParams.get('filter') === 'GD') {
+    } else if (searchParams.get('filter') === '3D Modeling') {
       setFilterGD()
-    } else if (searchParams.get('filter') === 'x') {
+    } else if (searchParams.get('filter') === 'Publications') {
       setFilterUX()
-    } else if (searchParams.get('filter') === 'VE') {
+    } else if (searchParams.get('filter') === 'Social Media') {
       setFilterVE()
-    } else if (searchParams.get('filter') === '3D') {
-      setFilter3D()
+    // } else if (searchParams.get('filter') === '3D') {
+      // setFilter3D()
     } else {
       setFilterALL()
     }
@@ -72,40 +72,40 @@ export const Projects = () => {
             active={filter === 'ALL' ? true : false}
           />
           <Button
-            text={`MIXED REALITY`}
+            text={`HCI`}
             size={'s'}
             onclick={setFilterMR}
-            active={filter === 'MIXED REALITY' ? true : false}
+            active={filter === 'HCI' ? true : false}
           />
           <Button
-            text={`Generative AI`}
+            text={`3D Modeling`}
             size={'s'}
             onclick={setFilterGD}
-            active={filter === 'GRAPHIC DESIGN' ? true : false}
+            active={filter === '3D MODELING' ? true : false}
           />
           <Button
-            text={`UX UI DESIGN`}
+            text={`Publications`}
             size={'s'}
             onclick={setFilterUX}
-            active={filter === 'UX UI DESIGN' ? true : false}
+            active={filter === 'Publications' ? true : false}
           />
           <Button
-            text={`VIDEO EDITING`}
+            text={`Social Media`}
             size={'s'}
             onclick={setFilterVE}
-            active={filter === 'VIDEO EDITING' ? true : false}
+            active={filter === 'Social Media' ? true : false}
           />
-          <Button
+          {/* <Button
             text={`3D`}
             href={'#'}
             size={'s'}
             onclick={setFilter3D}
             active={filter === '3D' ? true : false}
-          />
+          /> */}
         </FilterContainer>
         <GridContainer>
           {filteredProjects.length === 0 ? (
-            <NoProject>Pas de projets disponibles pour le moment.</NoProject>
+            <NoProject>PROJECTS BEING DEVELOPED. STAY TUNED.</NoProject>
           ) : (
             filteredProjects.map(
               ({ title, imgPath, mainsTag, secondsTags, id }) => (

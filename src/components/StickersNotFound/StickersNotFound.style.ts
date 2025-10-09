@@ -40,5 +40,4 @@ export const Text = styled.p`
   colors: ${colors.primary};
   font-family: ${fonts.OTR};
   font-size: ${bigLetters.xxs};
-  text-transform: uppercase;
 `

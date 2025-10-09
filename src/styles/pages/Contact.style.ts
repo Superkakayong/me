@@ -26,7 +26,6 @@ export const ContactTitle = styled.h4`
   color: ${colors.primary};
   font-size: ${bigLetters.s};
   font-family: ${fonts.OTR};
-  text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-top: 0.8em;
 
@@ -113,7 +112,6 @@ export const Button = styled.button`
   font-family: ${fonts.OTR};
   color: ${colors.secondary};
   font-size: ${fontSize.lg};
-  text-transform: uppercase;
   border: 1px solid ${colors.primary};
   border-radius: 15px;
   padding: 0.1em 1.1em;

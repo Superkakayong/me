@@ -26,7 +26,6 @@ export const InputContainer = styled.div<InputContainer>`
     left: 0;
     transform: translateY(-50%);
     transition: all 500ms ease-in-out;
-    text-transform: uppercase;
     letter-spacing: 0.2em;
   }
 `
