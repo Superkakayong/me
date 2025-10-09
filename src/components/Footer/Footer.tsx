@@ -34,7 +34,7 @@ export const Footer = () => {
           </GoTop>
           <LinksContainer>
             <Links data-cursor href='https://drive.google.com/file/d/1xmvgNuMxtOctdu7l8p7KPrD44JZ4Cu57/view?usp=share_link'>
-              RESUME
+              RESUME/CV
             </Links>
             {/* <Links data-cursor href='https://www.behance.net/antoinegvs'>
               BEHANCE

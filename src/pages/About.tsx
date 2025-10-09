@@ -177,7 +177,7 @@ export const About = () => {
           </CarouselSide>
         </MainUnProExperienceContainer>
 
-        <Button text={'VOIR MON CV'} size={'md'} style={responsiveButton} />
+        {/* <Button text={'VOIR MON CV'} size={'md'} style={responsiveButton} /> */}
       </AboutContainer>
     </PageTransition>
   )
